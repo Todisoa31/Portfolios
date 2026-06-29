@@ -1,35 +1,74 @@
 "use client";
 
+import {
+  Drawer,
+  IconButton,
+} from "@mui/material";
+
+import MenuIcon from "@mui/icons-material/Menu";
+
+import { useState } from "react";
+
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const links = [
+  { id: "about", label: "À propos" },
+  { id: "skills", label: "Compétences" },
+  { id: "experience", label: "Expérience" },
+  { id: "case-studies", label: "Études de cas" },
+  { id: "projects", label: "Projets" },
+  { id: "contact", label: "Contact" },
+];
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#111827]/80 backdrop-blur-md">
-      <nav className="max-w-7xl mx-auto flex justify-between items-center py-5 px-6">
-        <h1 className="font-bold text-yellow-400">
-          Todisoa.dev
-        </h1>
+    <>
+      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto flex justify-between p-6">
 
-        <ul className="flex gap-8">
-          <li>
-            <a href="#about">À propos</a>
-          </li>
+          <h1 className="text-yellow-400 font-bold">
+            Todisoa.dev
+          </h1>
 
-          <li>
-            <a href="#skills">Compétences</a>
-          </li>
+          <ul className="hidden md:flex gap-8">
+            {links.map((item) => (
+              <li key={item.id}>
+                <a href={`#${item.id}`}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-          <li>
-            <a href="#experience">Expériences</a>
-          </li>
+          <IconButton
+            className="md:hidden"
+            onClick={() => setOpen(true)}
+          >
+            <MenuIcon />
+          </IconButton>
 
-          <li>
-            <a href="#projects">Projets</a>
-          </li>
+        </div>
+      </header>
 
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={() => setOpen(false)}
+      >
+        <div className="w-64 p-8">
+
+          {links.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className="block py-4"
+            >
+              {item.label}
+            </a>
+          ))}
+
+        </div>
+      </Drawer>
+    </>
   );
 }

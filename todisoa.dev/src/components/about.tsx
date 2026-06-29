@@ -9,7 +9,7 @@ export default function About() {
       id="about"
       className="max-w-7xl mx-auto px-6 py-24"
     >
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="glass grid md:grid-cols-2 gap-12 items-center">
 
         <motion.div
           initial={{ opacity: 0, x: -60 }}

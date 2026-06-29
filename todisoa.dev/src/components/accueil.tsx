@@ -33,17 +33,12 @@ export default function Accueil() {
 
         <div className="mt-10 flex justify-center gap-4">
           <Button
+            component="a"
+            href="/cv/Todisoa-Herinjanahary.pdf"
+            download
             variant="contained"
-            color="primary"
           >
-            Télécharger CV
-          </Button>
-
-          <Button
-            variant="outlined"
-            color="secondary"
-          >
-            Contact
+            Télécharger mon CV
           </Button>
         </div>
       </div>
