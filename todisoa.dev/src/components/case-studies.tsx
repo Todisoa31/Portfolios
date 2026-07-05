@@ -4,7 +4,7 @@ import SectionTitle from "./ui/sectionTitle";
 
 export default function CaseStudies() {
   return (
-    <section id="case-studies">
+    <section id="case-studies" className="glass">
       <Container>
 
         <SectionTitle
@@ -12,7 +12,7 @@ export default function CaseStudies() {
           title="Études de cas"
         />
 
-        <div className=" glass space-y-8">
+        <div className=" space-y-8">
 
           {caseStudies.map((item) => (
             <div

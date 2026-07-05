@@ -7,9 +7,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-7xl mx-auto px-6 py-24"
+      className="glass max-w-7xl mx-auto px-6 py-24"
     >
-      <div className="glass grid md:grid-cols-2 gap-12 items-center">
+      <div className=" grid md:grid-cols-2 gap-12 items-center">
 
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -20,9 +20,11 @@ export default function About() {
             <div className="absolute inset-0 rounded-3xl bg-yellow-400 rotate-6" />
 
             <Image
-              src="/images/profile.jpg"
+              src="/images/elie.jpg"
               alt="Todisoa Herinjanahary"
               fill
+              sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority
               className="rounded-3xl object-cover relative z-10"
             />
           </div>

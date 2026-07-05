@@ -1,13 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
+import { ReactNode } from "react";
 
-type Props = {
-  children: React.ReactNode;
+type Props = HTMLMotionProps<"div"> & {
+  children: ReactNode;
 };
 
 export default function AnimatedCard({
   children,
+  className = "",
+  ...props
 }: Props) {
   return (
     <motion.div
@@ -18,13 +21,16 @@ export default function AnimatedCard({
       transition={{
         duration: 0.2,
       }}
-      className="
+      {...props}
+      className={`
         bg-gray-800
         rounded-2xl
         border
         border-gray-700
         p-6
-      "
+        cursor-pointer
+        ${className}
+      `}
     >
       {children}
     </motion.div>

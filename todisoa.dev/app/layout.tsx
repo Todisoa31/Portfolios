@@ -1,45 +1,54 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import type { Metadata } from "next";
+import Providers from "./providers";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+export const metadata : Metadata = {
+  metadataBase: new URL(
+    "https://todisoa.dev"
+  ),
 
-export const metadata: Metadata = {
-  title: "Todisoa.dev | Développeur Full Stack",
+  title:
+    "Todisoa Herinjanahary | Fullstack JavaScript Developer",
+
   description:
-    "Découvrez mes projets, compétences et expériences en développement web moderne avec React, Next.js, TypeScript et Node.js.",
+    "Développeur Fullstack JS spécialisé React, Next.js, NestJS et Node.js.",
+
   keywords: [
-    "Todisoa",
-    "Développeur Full Stack",
-    "Portfolio",
     "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Développement Web",
+    "NextJS",
+    "NestJS",
+    "NodeJS",
+    "Fullstack",
+    "JavaScript",
   ],
-  authors: [{ name: "Todisoa" }],
+
+  openGraph: {
+    title:
+      "Todisoa Herinjanahary",
+
+    description:
+      "Portfolio Fullstack Developer",
+
+    images: ["/og-image.png"],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="fr">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

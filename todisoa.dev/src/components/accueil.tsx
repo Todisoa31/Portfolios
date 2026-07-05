@@ -5,15 +5,15 @@ import { motion } from "framer-motion";
 
 export default function Accueil() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-5xl text-center">
+    <section className=" flex items-center justify-center px-6">
+      <div className=" max-w-7xl text-center">
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl md:text-7xl font-bold"
         >
-          TODISOA
-          <span className="text-yellow-400"> HERINJANAHARY</span>
+          TODISOA HERINJANAHARY
+          <span className="text-yellow-400"> Jean Albin Elie</span>
         </motion.h1>
 
         <motion.h2

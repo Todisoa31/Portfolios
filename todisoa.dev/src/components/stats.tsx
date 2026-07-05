@@ -26,7 +26,7 @@ export default function Stats() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
 
-        <div className=" glass grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className=" grid grid-cols-2 md:grid-cols-4 gap-6">
 
           {stats.map((stat, index) => (
             <motion.div

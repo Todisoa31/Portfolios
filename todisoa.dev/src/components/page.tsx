@@ -1,9 +1,7 @@
-import Navbar from "./navbar";
 import Accueil from "./accueil";
-// import { Contact } from "resend";
 import About from "./about";
 import Experience from "./experience";
-import Projects from "./projects";
+import Projects from "./project/projects";
 import Skills from "./skills";
 import Background from "./background";
 import Contact from "./contact";
@@ -15,7 +13,7 @@ import Divider from "./ui/divider";
 export default function PageAccueil() {
   return (
     <>
-      <Navbar />
+      <Background />
 
       <main>
         <Accueil />
@@ -41,8 +39,6 @@ export default function PageAccueil() {
         <Contact />
         
         <Footer />
-
-        <Background />
       </main>
     </>
   );

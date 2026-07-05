@@ -7,13 +7,13 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="max-w-7xl mx-auto px-6 py-24"
+      className="glass max-w-7xl mx-auto px-6 py-24"
     >
       <h2 className="text-4xl font-bold text-center mb-16">
         Technologies
       </h2>
 
-      <div className="glass grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-2 md:grid-cols-4 gap-6">
 
         {skills.map((skill, index) => {
           const Icon = skill.icon;
