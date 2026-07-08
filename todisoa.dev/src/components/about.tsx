@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="glass max-w-7xl mx-auto px-6 py-24"
+      className="glass max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24"
     >
       <div className=" grid md:grid-cols-2 gap-12 items-center">
 
@@ -16,14 +16,14 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <div className="relative w-[320px] h-80 mx-auto">
+          <div className="relative w-full max-w-[320px] aspect-square mx-auto">
             <div className="absolute inset-0 rounded-3xl bg-yellow-400 rotate-6" />
 
             <Image
               src="/images/elie.jpg"
               alt="Todisoa Herinjanahary"
               fill
-              sizes = "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
               priority
               className="rounded-3xl object-cover relative z-10"
             />
@@ -35,11 +35,26 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <p className="text-red-500 font-semibold mb-3">
+          <p className="
+              inline-block
+              rounded-full
+              border
+              font-semibold
+              mb-4
+              border-yellow-500/30
+              bg-yellow-500/10
+              px-4
+              py-1
+              text-xs
+              sm:text-sm
+              tracking-widest
+              uppercase
+              text-yellow-400
+            ">
             À PROPOS
           </p>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="mt-5 text-3xl sm:text-4xl font-bold mb-6">
             Développeur Fullstack JavaScript
           </h2>
 
@@ -52,7 +67,7 @@ export default function About() {
             NestJS, MongoDB et PostgreSQL.
           </p>
 
-          <div className="grid grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
 
             <div>
               <h3 className="text-yellow-400 text-3xl font-bold">

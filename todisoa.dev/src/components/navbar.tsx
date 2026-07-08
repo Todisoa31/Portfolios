@@ -40,12 +40,13 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <IconButton
-            className="md:hidden"
-            onClick={() => setOpen(true)}
-          >
-            <MenuIcon />
-          </IconButton>
+          <div className="md:hidden">
+            <IconButton
+              onClick={() => setOpen(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+          </div>
 
         </div>
       </header>

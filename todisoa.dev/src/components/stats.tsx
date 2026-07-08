@@ -23,10 +23,10 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 sm:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className=" grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:mx-auto sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6">
 
           {stats.map((stat, index) => (
             <motion.div
@@ -50,15 +50,16 @@ export default function Stats() {
                 border
                 border-gray-700
                 rounded-2xl
-                p-8
+                p-5 sm:p-8
                 text-center
+                overflow-hidden
               "
             >
-              <h3 className="text-4xl font-bold text-yellow-400">
+              <h3 className="text-3xl sm:text-4xl font-bold text-yellow-400">
                 {stat.number}
               </h3>
 
-              <p className="mt-2 text-gray-400">
+              <p className="mt-2 text-sm sm:text-base text-gray-400">
                 {stat.label}
               </p>
             </motion.div>

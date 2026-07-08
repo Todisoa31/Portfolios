@@ -68,18 +68,28 @@ export default function ProjectDrawer({
         <Box
           sx={{
             position: "relative",
+            minHeight: {
+              xs: 260,
+              md: 320,
+            },
+            overflow: "hidden",
           }}
         >
+          {/* Image */}
+
           <Box
             component="img"
             src={project.thumbnail}
             alt={project.title}
             sx={{
+              position: "absolute",
+              inset: 0,
               width: "100%",
-              height: 260,
+              height: "100%",
               objectFit: "cover",
             }}
           />
+
 
           {/* Overlay */}
 
@@ -87,10 +97,12 @@ export default function ProjectDrawer({
             sx={{
               position: "absolute",
               inset: 0,
+              zIndex: 1,
               background:
-                "linear-gradient(to top, rgba(17,24,39,.95), rgba(17,24,39,.25), transparent)",
+                "linear-gradient(to top, rgba(17,24,39,.95), rgba(17,24,39,.35), transparent)",
             }}
           />
+
 
           {/* Back Button */}
 
@@ -98,59 +110,105 @@ export default function ProjectDrawer({
             onClick={onClose}
             sx={{
               position: "absolute",
-              top: 20,
-              left: 20,
+
+              top: {
+                xs: 12,
+                md: 20,
+              },
+
+              left: {
+                xs: 12,
+                md: 20,
+              },
 
               width: 48,
               height: 48,
 
-              bgcolor: "rgba(255,255,255,.08)",
+              zIndex: 10,
 
-              backdropFilter: "blur(20px)",
+              bgcolor: "rgba(17,24,39,.55)",
 
-              border: "1px solid rgba(255,255,255,.15)",
+              backdropFilter: "blur(12px)",
+
+              border: "1px solid rgba(255,255,255,.25)",
 
               color: "white",
 
-              transition: ".3s",
+              transition: "all .3s ease",
 
               "&:hover": {
-                bgcolor: "rgba(255,255,255,.18)",
-                transform: "translateX(-3px)",
+                bgcolor: "rgba(17,24,39,.85)",
+                transform: "translateX(-4px)",
               },
             }}
           >
-            <ArrowBackIosNewRoundedIcon />
+            <ArrowBackIosNewRoundedIcon fontSize="small" />
           </IconButton>
+
 
           {/* Title */}
 
           <Box
             sx={{
               position: "absolute",
-              bottom: 24,
-              left: 24,
-              right: 24,
+
+              bottom: {
+                xs: 16,
+                md: 24,
+              },
+
+              left: {
+                xs: 16,
+                md: 24,
+              },
+
+              right: {
+                xs: 16,
+                md: 24,
+              },
+
+              zIndex: 5,
             }}
           >
+
             <Typography
               variant="h4"
               sx={{
-                fontWeight: 700,
+                fontWeight: 800,
+
+                fontSize: {
+                  xs: "1.8rem",
+                  md: "2.2rem",
+                },
+
+                lineHeight: 1.2,
+
+                textShadow:
+                  "0 4px 15px rgba(0,0,0,.5)",
               }}
               gutterBottom
             >
               {project.title}
             </Typography>
 
+
             <Typography
               sx={{
-                color: "rgba(255,255,255,.75)",
+                color: "rgba(255,255,255,.8)",
+
+                fontSize: {
+                  xs: ".9rem",
+                  md: "1rem",
+                },
+
+                lineHeight: 1.6,
               }}
             >
               {project.shortDescription}
             </Typography>
+
           </Box>
+
         </Box>
 
         {/* ================= CONTENT ================= */}

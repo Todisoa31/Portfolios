@@ -3,10 +3,10 @@ import PageAccueil from "@/src/components/page";
 
 export default function Home() {
   return (
-    <div className="bg-transparent flex flex-col flex-1 items-center font-sans">
+    <div className="min-h-screen bg-transparent font-sans">
       <Navbar />
 
-      <main className="flex w-full max-w-7xl flex-col py-32 px-16">
+      <main className="mx-auto flex w-full max-w-7xl flex-col px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32">
         <PageAccueil />
       </main>
     </div>

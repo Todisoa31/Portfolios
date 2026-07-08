@@ -3,8 +3,6 @@ export interface Project {
 
   title: string;
 
-  // description: string;
-
   company: string;
 
   sector: string;
@@ -28,6 +26,10 @@ export interface Project {
   result: string;
 
   responsibilities: string[];
+
+  team: string;
+
+  impact: string;
 
   screenshots: string[];
 
