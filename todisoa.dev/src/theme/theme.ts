@@ -1,64 +1,64 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme } from '@mui/material/styles';
 
 export const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
 
     primary: {
-      main: "#3B82F6", // Bleu
-      light: "#60A5FA",
-      dark: "#2563EB",
+      main: '#3B82F6', // Bleu
+      light: '#60A5FA',
+      dark: '#2563EB',
     },
 
     secondary: {
-      main: "#8B5CF6", // Violet
-      light: "#A78BFA",
-      dark: "#7C3AED",
+      main: '#8B5CF6', // Violet
+      light: '#A78BFA',
+      dark: '#7C3AED',
     },
 
     background: {
-      default: "#0B1120",
-      paper: "#111827",
+      default: '#0B1120',
+      paper: '#111827',
     },
 
     text: {
-      primary: "#F8FAFC",
-      secondary: "#94A3B8",
+      primary: '#F8FAFC',
+      secondary: '#94A3B8',
     },
 
-    divider: "#1E293B",
+    divider: '#1E293B',
 
     success: {
-      main: "#22C55E",
+      main: '#22C55E',
     },
 
     warning: {
-      main: "#F59E0B",
+      main: '#F59E0B',
     },
 
     error: {
-      main: "#EF4444",
+      main: '#EF4444',
     },
   },
 
   typography: {
     fontFamily: [
-      "Inter",
-      "system-ui",
-      "-apple-system",
-      "BlinkMacSystemFont",
+      'Inter',
+      'system-ui',
+      '-apple-system',
+      'BlinkMacSystemFont',
       '"Segoe UI"',
-      "sans-serif",
-    ].join(","),
+      'sans-serif',
+    ].join(','),
 
     h1: {
       fontWeight: 800,
-      letterSpacing: "-0.04em",
+      letterSpacing: '-0.04em',
     },
 
     h2: {
       fontWeight: 700,
-      letterSpacing: "-0.03em",
+      letterSpacing: '-0.03em',
     },
 
     h3: {
@@ -70,7 +70,7 @@ export const theme = createTheme({
     },
 
     button: {
-      textTransform: "none",
+      textTransform: 'none',
       fontWeight: 600,
     },
   },
@@ -83,8 +83,8 @@ export const theme = createTheme({
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundImage: "none",
-          border: "1px solid rgba(255,255,255,0.06)",
+          backgroundImage: 'none',
+          border: '1px solid rgba(255,255,255,0.06)',
         },
       },
     },
@@ -92,11 +92,11 @@ export const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          background: "#111827",
-          transition: "all .3s ease",
-          "&:hover": {
-            transform: "translateY(-4px)",
-            boxShadow: "0 20px 40px rgba(59,130,246,.15)",
+          background: '#111827',
+          transition: 'all .3s ease',
+          '&:hover': {
+            transform: 'translateY(-4px)',
+            boxShadow: '0 20px 40px rgba(59,130,246,.15)',
           },
         },
       },
@@ -112,7 +112,7 @@ export const theme = createTheme({
         },
 
         outlined: {
-          borderColor: "#334155",
+          borderColor: '#334155',
         },
       },
     },

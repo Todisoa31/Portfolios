@@ -1,27 +1,23 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import Container from "../ui/container";
-import SectionTitle from "../ui/sectionTitle";
+import Container from '../ui/container';
+import SectionTitle from '../ui/sectionTitle';
 
-import { projects } from "../../data/projects";
-import { Project } from "../../types/project";
+import { projects } from '../../data/projects';
+import { Project } from '../../types/project';
 
-import ProjectCard from "./projectCard";
-import ProjectDrawer from "./projectDrawer";
+import ProjectCard from './projectCard';
+import ProjectDrawer from './projectDrawer';
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] =
-    useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="projects" className="glass">
       <Container>
-        <SectionTitle
-          subtitle="PORTFOLIO"
-          title="Mes projets"
-        />
+        <SectionTitle subtitle="PORTFOLIO" title="Mes projets" />
 
         {/* GRID */}
         <div className="grid md:grid-cols-3 gap-8">

@@ -1,12 +1,12 @@
-import { CaseStudy } from "../types/caseStudy";
+import { CaseStudy } from '../types/caseStudy';
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: "mongodb-performance",
+    id: 'mongodb-performance',
 
-    title: "Optimisation des performances MongoDB",
+    title: 'Optimisation des performances MongoDB',
 
-    project: "Plateforme Assurance",
+    project: 'Plateforme Assurance',
 
     challenge:
       "Certaines fonctionnalités métier manipulaient plusieurs milliers d'enregistrements. Les utilisateurs devaient parfois attendre plusieurs secondes avant d'obtenir les résultats.",
@@ -18,17 +18,13 @@ export const caseStudies: CaseStudy[] = [
       "Réduction jusqu'à 40 % du temps de réponse des principales fonctionnalités tout en diminuant la charge des serveurs.",
 
     learnings: [
-      "MongoDB Indexes",
-      "Aggregation Pipeline",
-      "Analyse des performances",
-      "Optimisation Backend",
+      'MongoDB Indexes',
+      'Aggregation Pipeline',
+      'Analyse des performances',
+      'Optimisation Backend',
     ],
 
-    technologies: [
-      "MongoDB",
-      "Node.js",
-      "TypeScript",
-    ],
+    technologies: ['MongoDB', 'Node.js', 'TypeScript'],
   },
 
   // {
@@ -62,11 +58,11 @@ export const caseStudies: CaseStudy[] = [
   // },
 
   {
-    id: "cee",
+    id: 'cee',
 
-    title: "Architecture de gestion des dossiers CEE",
+    title: 'Architecture de gestion des dossiers CEE',
 
-    project: "Plateforme CEE",
+    project: 'Plateforme CEE',
 
     challenge:
       "Les différents secteurs d'activité possédaient leurs propres règles métier, formulaires et processus de validation. L'application devait rester flexible sans dupliquer le code.",
@@ -75,59 +71,51 @@ export const caseStudies: CaseStudy[] = [
       "Création d'une architecture basée sur des composants React réutilisables, formulaires dynamiques et factorisation des traitements communs.",
 
     result:
-      "Développement plus rapide des nouvelles fonctionnalités et amélioration de la productivité des équipes métier.",
+      'Développement plus rapide des nouvelles fonctionnalités et amélioration de la productivité des équipes métier.',
 
     learnings: [
-      "Architecture React",
-      "Composants réutilisables",
-      "UX métier",
-      "Formulaires dynamiques",
+      'Architecture React',
+      'Composants réutilisables',
+      'UX métier',
+      'Formulaires dynamiques',
     ],
 
-    technologies: [
-      "React",
-      "Next.js",
-      "JavaScript",
-    ],
+    technologies: ['React', 'Next.js', 'JavaScript'],
   },
 
   {
-    id: "data-migration",
+    id: 'data-migration',
 
-    title: "Migration de données entre deux environnements",
+    title: 'Migration de données entre deux environnements',
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
-        "Migrer des données provenant d'une base PostgreSQL située en France vers un environnement de production à Madagascar tout en garantissant l'intégrité des informations et en évitant les doublons.",
+      "Migrer des données provenant d'une base PostgreSQL située en France vers un environnement de production à Madagascar tout en garantissant l'intégrité des informations et en évitant les doublons.",
 
     solution:
-        "Développement d'un script Node.js capable d'extraire les données, de normaliser certaines valeurs, de détecter les doublons potentiels, de vérifier l'existence des enregistrements avant insertion puis de valider la cohérence des données après migration.",
+      "Développement d'un script Node.js capable d'extraire les données, de normaliser certaines valeurs, de détecter les doublons potentiels, de vérifier l'existence des enregistrements avant insertion puis de valider la cohérence des données après migration.",
 
     result:
-        "Migration réalisée sans perte d'information avec des contrôles fonctionnels validés par les équipes métier.",
+      "Migration réalisée sans perte d'information avec des contrôles fonctionnels validés par les équipes métier.",
 
-    learnings:[
-        "Migration de données",
-        "Qualité des données",
-        "Node.js",
-        "PostgreSQL",
-        "Validation métier"
+    learnings: [
+      'Migration de données',
+      'Qualité des données',
+      'Node.js',
+      'PostgreSQL',
+      'Validation métier',
     ],
 
-    technologies:[
-        "Node.js",
-        "PostgreSQL",
-        "CMIS"
-    ]
+    technologies: ['Node.js', 'PostgreSQL', 'CMIS'],
   },
 
   {
-    id: "frt-import",
+    id: 'frt-import',
 
-    title: "Automatisation du dépôt massif des Fiches de Renseignement Technique",
+    title: 'Automatisation du dépôt massif des Fiches de Renseignement Technique',
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
       "Les utilisateurs devaient renseigner manuellement les Fiches de Renseignement Technique (FRT) pour chaque dossier, une tâche longue, répétitive et source d'erreurs.",
@@ -136,103 +124,75 @@ export const caseStudies: CaseStudy[] = [
       "Développement d'un module permettant l'import massif des FRT. Chaque fichier était analysé, validé puis utilisé pour enrichir automatiquement les propriétés métier telles que les consignes, anomalies et paramètres de traitement.",
 
     result:
-      "Réduction significative des traitements manuels, amélioration de la qualité des données et accélération de la préparation des dossiers.",
+      'Réduction significative des traitements manuels, amélioration de la qualité des données et accélération de la préparation des dossiers.',
 
     highlight:
       "Cette fonctionnalité a permis d'automatiser un processus métier auparavant entièrement manuel.",
 
     learnings: [
-      "Parsing",
-      "Validation",
-      "Traitement Batch",
-      "CMIS",
-      "Architecture métier",
-      "Qualité des données",
+      'Parsing',
+      'Validation',
+      'Traitement Batch',
+      'CMIS',
+      'Architecture métier',
+      'Qualité des données',
     ],
 
-    technologies: [
-      "Node.js",
-      "AngularJS",
-      "TypeScript",
-      "PostgreSQL",
-      "CMIS",
-    ],
+    technologies: ['Node.js', 'AngularJS', 'TypeScript', 'PostgreSQL', 'CMIS'],
   },
 
   {
-    id: "balance-carree",
+    id: 'balance-carree',
 
-    title: "Développement du module Balance Carrée",
+    title: 'Développement du module Balance Carrée',
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
-      "Les équipes comptables devaient vérifier la cohérence des écritures sur de gros volumes de données tout en conservant des temps de calcul raisonnables.",
+      'Les équipes comptables devaient vérifier la cohérence des écritures sur de gros volumes de données tout en conservant des temps de calcul raisonnables.',
 
     solution:
       "Développement d'un module permettant de calculer automatiquement la balance carrée avec filtres dynamiques, agrégation des écritures et export CSV.",
 
     result:
-      "Calcul beaucoup plus rapide des balances comptables et amélioration de la productivité des équipes métier.",
+      'Calcul beaucoup plus rapide des balances comptables et amélioration de la productivité des équipes métier.',
 
-    highlight:
-      "Cette fonctionnalité est devenue un outil quotidien pour les équipes comptables.",
+    highlight: 'Cette fonctionnalité est devenue un outil quotidien pour les équipes comptables.',
 
-    learnings: [
-      "Calcul comptable",
-      "Agrégation",
-      "Optimisation",
-      "Export CSV",
-    ],
+    learnings: ['Calcul comptable', 'Agrégation', 'Optimisation', 'Export CSV'],
 
-    technologies: [
-      "AngularJS",
-      "Node.js",
-      "PostgreSQL",
-      "CMIS",
-    ],
+    technologies: ['AngularJS', 'Node.js', 'PostgreSQL', 'CMIS'],
   },
 
   {
-    id: "workbatch",
+    id: 'workbatch',
 
-    title: "Optimisation du moteur WorkBatch",
+    title: 'Optimisation du moteur WorkBatch',
 
-    project: "Gestion Documentaire et Comptable",
+    project: 'Gestion Documentaire et Comptable',
 
     challenge:
       "Les documents devaient être regroupés automatiquement en lots équilibrés afin d'être distribués aux opérateurs de traitement sans créer de doublons.",
 
     solution:
-      "Optimisation des algorithmes de création des WorkBatch, amélioration des tris, regroupement des documents et contrôle des traitements.",
+      'Optimisation des algorithmes de création des WorkBatch, amélioration des tris, regroupement des documents et contrôle des traitements.',
 
     result:
-      "Création plus rapide des lots, meilleure répartition des documents et diminution des traitements inutiles.",
+      'Création plus rapide des lots, meilleure répartition des documents et diminution des traitements inutiles.',
 
-    highlight:
-      "Travail réalisé sur un moteur métier manipulant plusieurs milliers de documents.",
+    highlight: 'Travail réalisé sur un moteur métier manipulant plusieurs milliers de documents.',
 
-    learnings: [
-      "Algorithmes",
-      "Batch Processing",
-      "Optimisation",
-      "Architecture documentaire",
-    ],
+    learnings: ['Algorithmes', 'Batch Processing', 'Optimisation', 'Architecture documentaire'],
 
-    technologies: [
-      "Node.js",
-      "TypeScript",
-      "CMIS",
-      "PostgreSQL",
-    ],
+    technologies: ['Node.js', 'TypeScript', 'CMIS', 'PostgreSQL'],
   },
 
   {
-    id: "critical-production-incident",
+    id: 'critical-production-incident',
 
     title: "Résolution autonome d'un incident critique sur Numen Expert",
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
       "Une fonctionnalité critique de l'application ne fonctionnait plus correctement et impactait directement les équipes métier. La fonctionnalité concernée avait été développée historiquement par l'équipe française et, face à la complexité du problème, la décision initiale était d'escalader l'incident afin qu'elle intervienne.",
@@ -247,136 +207,114 @@ export const caseStudies: CaseStudy[] = [
       "Cette expérience m'a appris qu'avant d'escalader un problème, il est essentiel de prendre le temps de comprendre son fonctionnement. Une analyse méthodique permet souvent d'identifier une solution durable, même sur une application complexe que l'on ne connaît pas encore parfaitement. Elle a également renforcé ma confiance dans ma capacité à résoudre des incidents critiques de manière autonome.",
 
     learnings: [
-      "Analyse de cause racine (Root Cause Analysis)",
+      'Analyse de cause racine (Root Cause Analysis)',
       "Débogage d'applications AngularJS complexes",
       "Lecture et compréhension d'une base de code existante",
       "Résolution d'incidents de production",
       "Prise d'initiative",
-      "Autonomie technique",
-      "Validation fonctionnelle",
-      "Communication avec les équipes projet",
+      'Autonomie technique',
+      'Validation fonctionnelle',
+      'Communication avec les équipes projet',
     ],
 
     technologies: [
-      "AngularJS",
-      "Angular",
-      "Node.js",
-      "TypeScript",
-      "JavaScript",
-      "PostgreSQL",
-      "CMIS",
+      'AngularJS',
+      'Angular',
+      'Node.js',
+      'TypeScript',
+      'JavaScript',
+      'PostgreSQL',
+      'CMIS',
     ],
   },
 
   {
-    id: "fec-import",
+    id: 'fec-import',
 
     title: "Finalisation et intégration d'un moteur d'import FEC",
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
-        "Le moteur d'import FEC avait été initié mais n'était pas encore terminé. Il devait être repris, complété puis intégré dans une application métier déjà en production.",
+      "Le moteur d'import FEC avait été initié mais n'était pas encore terminé. Il devait être repris, complété puis intégré dans une application métier déjà en production.",
 
     solution:
-        "Analyse de l'architecture existante, finalisation des fonctionnalités manquantes, amélioration des traitements d'import, intégration avec Numen Expert et validation des données importées avec les équipes métier.",
+      "Analyse de l'architecture existante, finalisation des fonctionnalités manquantes, amélioration des traitements d'import, intégration avec Numen Expert et validation des données importées avec les équipes métier.",
 
     result:
-        "Le moteur a été mis en production avec succès et permet désormais d'automatiser l'import des Fichiers des Écritures Comptables ainsi que l'intégration des données dans l'application.",
+      "Le moteur a été mis en production avec succès et permet désormais d'automatiser l'import des Fichiers des Écritures Comptables ainsi que l'intégration des données dans l'application.",
 
-    learnings:[
-        "Reprise d'un projet existant",
-        "Reverse engineering",
-        "Import de données",
-        "Node.js",
-        "Architecture logicielle",
-        "Qualité des données"
+    learnings: [
+      "Reprise d'un projet existant",
+      'Reverse engineering',
+      'Import de données',
+      'Node.js',
+      'Architecture logicielle',
+      'Qualité des données',
     ],
 
-    technologies:[
-        "Node.js",
-        "TypeScript",
-        "PostgreSQL",
-        "CMIS"
-    ],
+    technologies: ['Node.js', 'TypeScript', 'PostgreSQL', 'CMIS'],
 
     highlight:
-        "Cette expérience m'a appris à reprendre un développement existant, à comprendre rapidement une architecture que je n'avais pas conçue et à mener le projet jusqu'à sa mise en production."
+      "Cette expérience m'a appris à reprendre un développement existant, à comprendre rapidement une architecture que je n'avais pas conçue et à mener le projet jusqu'à sa mise en production.",
   },
 
   {
-    id: "shopify",
+    id: 'shopify',
 
     title: "Optimisation d'une boutique Shopify",
 
-    project: "Optimisation Shopify",
+    project: 'Optimisation Shopify',
 
     challenge:
-      "Une boutique Shopify présentait un temps de chargement élevé causé par des scripts JavaScript inutiles, des images volumineuses et plusieurs ressources bloquantes.",
+      'Une boutique Shopify présentait un temps de chargement élevé causé par des scripts JavaScript inutiles, des images volumineuses et plusieurs ressources bloquantes.',
 
     solution:
-      "Audit complet avec Lighthouse, suppression des scripts inutilisés, optimisation des images, lazy loading, optimisation du thème Shopify et réduction des ressources critiques.",
+      'Audit complet avec Lighthouse, suppression des scripts inutilisés, optimisation des images, lazy loading, optimisation du thème Shopify et réduction des ressources critiques.',
 
     result:
-      "Amélioration sensible des performances de la boutique, meilleure expérience utilisateur et optimisation du référencement naturel.",
+      'Amélioration sensible des performances de la boutique, meilleure expérience utilisateur et optimisation du référencement naturel.',
 
     learnings: [
-      "Lighthouse",
-      "Core Web Vitals",
-      "Optimisation JavaScript",
-      "Optimisation des images",
+      'Lighthouse',
+      'Core Web Vitals',
+      'Optimisation JavaScript',
+      'Optimisation des images',
     ],
 
-    technologies: [
-      "Shopify",
-      "JavaScript",
-      "Liquid",
-      "HTML",
-      "CSS",
-    ],
+    technologies: ['Shopify', 'JavaScript', 'Liquid', 'HTML', 'CSS'],
   },
 
   {
-    id: "ecommerce",
+    id: 'ecommerce',
 
     title: "Architecture d'une plateforme E-commerce",
 
-    project: "Plateforme E-commerce",
+    project: 'Plateforme E-commerce',
 
     challenge:
-      "Développer une plateforme capable de gérer un catalogue important de produits, les commandes et les échanges entre le frontend et le backend.",
+      'Développer une plateforme capable de gérer un catalogue important de produits, les commandes et les échanges entre le frontend et le backend.',
 
     solution:
-      "Développement du frontend React, création des API Node.js, intégration de GraphQL et modélisation de la base PostgreSQL avec Sequelize.",
+      'Développement du frontend React, création des API Node.js, intégration de GraphQL et modélisation de la base PostgreSQL avec Sequelize.',
 
     result:
-      "Une plateforme performante offrant une navigation fluide et une architecture facilement maintenable.",
+      'Une plateforme performante offrant une navigation fluide et une architecture facilement maintenable.',
 
-    learnings: [
-      "GraphQL",
-      "Sequelize",
-      "PostgreSQL",
-      "Architecture API",
-    ],
+    learnings: ['GraphQL', 'Sequelize', 'PostgreSQL', 'Architecture API'],
 
-    technologies: [
-      "React",
-      "Node.js",
-      "GraphQL",
-      "PostgreSQL",
-      "Sequelize",
-    ],
+    technologies: ['React', 'Node.js', 'GraphQL', 'PostgreSQL', 'Sequelize'],
   },
 
   {
-    id: "ged",
+    id: 'ged',
 
     title: "Évolution d'une plateforme de Gestion Électronique de Documents",
 
-    project: "Gestion Documentaire",
+    project: 'Gestion Documentaire',
 
     challenge:
-      "Faire évoluer une plateforme documentaire manipulant plusieurs millions de documents tout en conservant des performances élevées et une forte stabilité.",
+      'Faire évoluer une plateforme documentaire manipulant plusieurs millions de documents tout en conservant des performances élevées et une forte stabilité.',
 
     solution:
       "Développement de nouvelles fonctionnalités AngularJS, création d'une interface de visualisation des dossiers, amélioration des traitements Node.js, optimisation des requêtes CMIS et maintenance continue de la plateforme.",
@@ -388,34 +326,28 @@ export const caseStudies: CaseStudy[] = [
       "Participation à une plateforme documentaire d'entreprise manipulant un volume très important de documents.",
 
     learnings: [
-      "AngularJS",
-      "CMIS",
-      "PostgreSQL",
-      "Architecture documentaire",
-      "Maintenance évolutive",
+      'AngularJS',
+      'CMIS',
+      'PostgreSQL',
+      'Architecture documentaire',
+      'Maintenance évolutive',
     ],
 
-    technologies: [
-      "AngularJS",
-      "Angular",
-      "Node.js",
-      "PostgreSQL",
-      "CMIS",
-    ],
+    technologies: ['AngularJS', 'Angular', 'Node.js', 'PostgreSQL', 'CMIS'],
   },
 
   {
-    id: "accounting",
+    id: 'accounting',
 
-    title: "Évolution de Numen Expert",
+    title: 'Évolution de Numen Expert',
 
-    project: "Gestion Comptable",
+    project: 'Gestion Comptable',
 
     challenge:
-      "Faire évoluer une application métier complexe composée de plusieurs interfaces tout en garantissant la continuité des traitements comptables.",
+      'Faire évoluer une application métier complexe composée de plusieurs interfaces tout en garantissant la continuité des traitements comptables.',
 
     solution:
-      "Développement de nouvelles fonctionnalités, maintenance corrective et évolutive, optimisation des traitements Node.js, amélioration des interfaces AngularJS et participation aux migrations de données entre les environnements France et Madagascar.",
+      'Développement de nouvelles fonctionnalités, maintenance corrective et évolutive, optimisation des traitements Node.js, amélioration des interfaces AngularJS et participation aux migrations de données entre les environnements France et Madagascar.',
 
     result:
       "Amélioration de la stabilité, des performances et de la maintenabilité de l'application.",
@@ -423,52 +355,29 @@ export const caseStudies: CaseStudy[] = [
     highlight:
       "Participation au développement d'une plateforme métier utilisée quotidiennement par les équipes comptables.",
 
-    learnings: [
-      "Architecture métier",
-      "CMIS",
-      "PostgreSQL",
-      "Maintenance",
-      "Agile Scrum",
-    ],
+    learnings: ['Architecture métier', 'CMIS', 'PostgreSQL', 'Maintenance', 'Agile Scrum'],
 
-    technologies: [
-      "AngularJS",
-      "Angular",
-      "Node.js",
-      "PostgreSQL",
-      "CMIS",
-      "Java",
-    ],
+    technologies: ['AngularJS', 'Angular', 'Node.js', 'PostgreSQL', 'CMIS', 'Java'],
   },
 
   {
-    id: "frontend",
+    id: 'frontend',
 
     title: "Création d'une architecture React réutilisable",
 
-    project: "Plusieurs projets",
+    project: 'Plusieurs projets',
 
     challenge:
-      "Plusieurs projets nécessitaient des composants similaires, entraînant de la duplication et un coût de maintenance élevé.",
+      'Plusieurs projets nécessitaient des composants similaires, entraînant de la duplication et un coût de maintenance élevé.',
 
     solution:
       "Mise en place de composants React réutilisables, standardisation des interfaces, amélioration de l'accessibilité et optimisation des performances de rendu.",
 
     result:
-      "Réduction du temps de développement des nouveaux écrans et amélioration de la qualité globale des applications.",
+      'Réduction du temps de développement des nouveaux écrans et amélioration de la qualité globale des applications.',
 
-    learnings: [
-      "React",
-      "Design System",
-      "Responsive Design",
-      "Accessibilité",
-    ],
+    learnings: ['React', 'Design System', 'Responsive Design', 'Accessibilité'],
 
-    technologies: [
-      "React",
-      "Material UI",
-      "Tailwind CSS",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Material UI', 'Tailwind CSS', 'TypeScript'],
   },
 ];

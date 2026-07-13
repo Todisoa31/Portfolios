@@ -1,5 +1,5 @@
-import Navbar from "@/src/components/navbar";
-import PageAccueil from "@/src/components/page";
+import Navbar from '@/src/components/navbar';
+import PageAccueil from '@/src/components/page';
 
 export default function Home() {
   return (

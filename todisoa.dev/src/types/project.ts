@@ -9,7 +9,7 @@ export interface Project {
 
   period: string;
 
-  status: "NDA" | "Public";
+  status: 'NDA' | 'Public';
 
   thumbnail: string;
 

@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const stats = [
   {
-    number: "6+",
+    number: '6+',
     label: "Années d'expérience",
   },
   {
-    number: "15+",
-    label: "Projets réalisés",
+    number: '15+',
+    label: 'Projets réalisés',
   },
   {
-    number: "40%",
-    label: "Gain de performance",
+    number: '40%',
+    label: 'Gain de performance',
   },
   {
-    number: "5+",
-    label: "Secteurs métiers",
+    number: '5+',
+    label: 'Secteurs métiers',
   },
 ];
 
@@ -25,9 +25,7 @@ export default function Stats() {
   return (
     <section className="py-16 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
         <div className="grid grid-cols-2 sm:mx-auto sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-6">
-
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -55,18 +53,12 @@ export default function Stats() {
                 overflow-hidden
               "
             >
-              <h3 className="text-3xl sm:text-4xl font-bold text-yellow-400">
-                {stat.number}
-              </h3>
+              <h3 className="text-3xl sm:text-4xl font-bold text-yellow-400">{stat.number}</h3>
 
-              <p className="mt-2 text-sm sm:text-base text-gray-400">
-                {stat.label}
-              </p>
+              <p className="mt-2 text-sm sm:text-base text-gray-400">{stat.label}</p>
             </motion.div>
           ))}
-
         </div>
-
       </div>
     </section>
   );

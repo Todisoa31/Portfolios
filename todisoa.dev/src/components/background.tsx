@@ -21,7 +21,7 @@ export default function Background() {
             linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
             linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px)
           `,
-          backgroundSize: "40px 40px",
+          backgroundSize: '40px 40px',
         }}
       />
 
@@ -29,8 +29,7 @@ export default function Background() {
       <div
         className="absolute inset-0"
         style={{
-          background:
-            "radial-gradient(circle at center, transparent 45%, rgba(0,0,0,.45) 100%)",
+          background: 'radial-gradient(circle at center, transparent 45%, rgba(0,0,0,.45) 100%)',
         }}
       />
     </div>

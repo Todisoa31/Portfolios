@@ -1,28 +1,22 @@
-import { Project } from "../types/project";
+import { Project } from '../types/project';
 
 export const projects: Project[] = [
   {
-    id: "cee",
+    id: 'cee',
 
     title: "Plateforme de gestion des Certificats d'Économies d'Énergie",
 
-    company: "Freelance - Mada ITLab",
+    company: 'Freelance - Mada ITLab',
 
-    sector: "Énergie • Transition énergétique",
+    sector: 'Énergie • Transition énergétique',
 
     period: "Mars 2025 - Aujourd'hui",
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Next.js",
-      "JavaScript",
-      "Git",
-      "Responsive Design",
-    ],
+    technologies: ['React', 'Next.js', 'JavaScript', 'Git', 'Responsive Design'],
 
     shortDescription:
       "Développement d'une plateforme permettant la gestion complète des dossiers CEE pour plusieurs secteurs d'activité.",
@@ -31,7 +25,7 @@ export const projects: Project[] = [
       "Participation au développement d'une plateforme destinée au traitement des Certificats d'Économies d'Énergie (CEE). L'application permet la création, la gestion et le suivi de milliers de dossiers répartis selon des secteurs tels que le résidentiel, l'agricole ou le tertiaire.",
 
     challenge:
-      "Créer une interface capable de gérer des workflows complexes, des formulaires dynamiques et une volumétrie importante de données tout en garantissant une navigation rapide et intuitive.",
+      'Créer une interface capable de gérer des workflows complexes, des formulaires dynamiques et une volumétrie importante de données tout en garantissant une navigation rapide et intuitive.',
 
     solution:
       "Développement de composants React réutilisables, mise en place d'interfaces dynamiques avec Next.js et collaboration étroite avec l'équipe backend afin d'assurer la cohérence des échanges de données.",
@@ -40,20 +34,19 @@ export const projects: Project[] = [
       "Livraison d'une plateforme performante, ergonomique et évolutive facilitant le traitement quotidien des dossiers CEE.",
 
     responsibilities: [
-      "Développement Frontend React",
-      "Développement Next.js",
-      "Création de composants réutilisables",
-      "Gestion des formulaires dynamiques",
-      "Optimisation UX",
-      "Responsive Design",
-      "Collaboration avec les développeurs Backend",
-      "Participation aux revues de code",
+      'Développement Frontend React',
+      'Développement Next.js',
+      'Création de composants réutilisables',
+      'Gestion des formulaires dynamiques',
+      'Optimisation UX',
+      'Responsive Design',
+      'Collaboration avec les développeurs Backend',
+      'Participation aux revues de code',
     ],
 
-    team: "Équipe Frontend & Backend",
+    team: 'Équipe Frontend & Backend',
 
-    impact:
-      "Amélioration de la fluidité de navigation et de la productivité des utilisateurs.",
+    impact: 'Amélioration de la fluidité de navigation et de la productivité des utilisateurs.',
 
     screenshots: [],
 
@@ -61,37 +54,29 @@ export const projects: Project[] = [
   },
 
   {
-    id: "assurance",
+    id: 'assurance',
 
-    title: "Plateforme de gestion Assurance & Réassurance",
+    title: 'Plateforme de gestion Assurance & Réassurance',
 
-    company: "Indépendant",
+    company: 'Indépendant',
 
-    sector: "Assurance • Réassurance",
+    sector: 'Assurance • Réassurance',
 
-    period: "Novembre 2024 - Février 2025",
+    period: 'Novembre 2024 - Février 2025',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "JavaScript",
-      "TypeScript",
-      "ARIA",
-    ],
+    technologies: ['React', 'Node.js', 'MongoDB', 'JavaScript', 'TypeScript', 'ARIA'],
 
-    shortDescription:
-      "Modernisation d'une plateforme métier dédiée au secteur de l'assurance.",
+    shortDescription: "Modernisation d'une plateforme métier dédiée au secteur de l'assurance.",
 
     overview:
       "Intervention sur une application existante afin d'améliorer les performances backend, moderniser l'interface utilisateur et optimiser l'accessibilité.",
 
     challenge:
-      "Optimiser une application manipulant un volume important de données sans impacter les fonctionnalités existantes.",
+      'Optimiser une application manipulant un volume important de données sans impacter les fonctionnalités existantes.',
 
     solution:
       "Optimisation des requêtes MongoDB, développement de scripts Node.js pour les migrations de données, refonte des composants React et amélioration de l'accessibilité (ARIA).",
@@ -100,20 +85,19 @@ export const projects: Project[] = [
       "Réduction de près de 40 % du temps de réponse des traitements et amélioration significative de l'expérience utilisateur.",
 
     responsibilities: [
-      "Optimisation MongoDB",
-      "Scripts Node.js",
-      "Migration de données",
-      "Refonte React",
-      "Création de nouveaux écrans",
-      "Responsive Design",
-      "Accessibilité ARIA",
-      "Correction de bugs",
+      'Optimisation MongoDB',
+      'Scripts Node.js',
+      'Migration de données',
+      'Refonte React',
+      'Création de nouveaux écrans',
+      'Responsive Design',
+      'Accessibilité ARIA',
+      'Correction de bugs',
     ],
 
-    team: "Développeurs Frontend & Backend",
+    team: 'Développeurs Frontend & Backend',
 
-    impact:
-      "Jusqu'à 40 % de réduction des temps de réponse.",
+    impact: "Jusqu'à 40 % de réduction des temps de réponse.",
 
     screenshots: [],
 
@@ -121,26 +105,21 @@ export const projects: Project[] = [
   },
 
   {
-    id: "ong",
+    id: 'ong',
 
     title: "Plateforme de gestion d'une ONG",
 
-    company: "Indépendant",
+    company: 'Indépendant',
 
-    sector: "ONG • Développement communautaire",
+    sector: 'ONG • Développement communautaire',
 
-    period: "Avril 2020 - Novembre 2021",
+    period: 'Avril 2020 - Novembre 2021',
 
-    status: "Public",
+    status: 'Public',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Sequelize",
-    ],
+    technologies: ['React', 'Node.js', 'TypeScript', 'Sequelize'],
 
     shortDescription:
       "Développement complet d'une plateforme destinée à promouvoir les activités d'une ONG et faciliter les dons.",
@@ -149,55 +128,46 @@ export const projects: Project[] = [
       "Conception et réalisation d'une plateforme permettant de présenter les projets de l'organisation, de communiquer avec les donateurs et de centraliser les informations relatives aux actions menées.",
 
     challenge:
-      "Créer une application simple à administrer tout en offrant une expérience utilisateur moderne.",
+      'Créer une application simple à administrer tout en offrant une expérience utilisateur moderne.',
 
     solution:
-      "Développement Fullstack en autonomie avec React, Node.js et Sequelize, en étroite collaboration avec le client.",
+      'Développement Fullstack en autonomie avec React, Node.js et Sequelize, en étroite collaboration avec le client.',
 
-    result:
-      "Une plateforme améliorant la visibilité de l'ONG et facilitant les campagnes de dons.",
+    result: "Une plateforme améliorant la visibilité de l'ONG et facilitant les campagnes de dons.",
 
     responsibilities: [
-      "Analyse des besoins",
-      "Conception",
-      "Développement Frontend",
-      "Développement Backend",
-      "Architecture de la base de données",
-      "Tests",
-      "Déploiement",
+      'Analyse des besoins',
+      'Conception',
+      'Développement Frontend',
+      'Développement Backend',
+      'Architecture de la base de données',
+      'Tests',
+      'Déploiement',
     ],
 
-    team: "Développement en autonomie",
+    team: 'Développement en autonomie',
 
-    impact:
-      "Digitalisation des activités de l'organisation.",
+    impact: "Digitalisation des activités de l'organisation.",
 
     screenshots: [],
   },
 
   {
-    id: "equipment-rental",
+    id: 'equipment-rental',
 
     title: "Plateforme de location d'engins",
 
-    company: "Indépendant",
+    company: 'Indépendant',
 
     sector: "Location d'engins",
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "GraphQL",
-      "PostgreSQL",
-      "Sequelize",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Node.js', 'GraphQL', 'PostgreSQL', 'Sequelize', 'TypeScript'],
 
     shortDescription:
       "Développement d'une plateforme de gestion et de réservation d'engins de chantier.",
@@ -206,56 +176,48 @@ export const projects: Project[] = [
       "Participation au développement d'une application permettant la consultation, la réservation et la gestion d'un parc d'engins destinés aux professionnels et particuliers.",
 
     challenge:
-      "Concevoir une plateforme capable de gérer les disponibilités des engins, les réservations et les informations des clients tout en garantissant une expérience utilisateur fluide.",
+      'Concevoir une plateforme capable de gérer les disponibilités des engins, les réservations et les informations des clients tout en garantissant une expérience utilisateur fluide.',
 
     solution:
-      "Développement des interfaces React, création des API Node.js, utilisation de GraphQL pour optimiser les échanges entre le frontend et le backend et modélisation de la base de données avec PostgreSQL et Sequelize.",
+      'Développement des interfaces React, création des API Node.js, utilisation de GraphQL pour optimiser les échanges entre le frontend et le backend et modélisation de la base de données avec PostgreSQL et Sequelize.',
 
     result:
-      "Une plateforme facilitant la gestion des réservations et améliorant le suivi des équipements disponibles.",
+      'Une plateforme facilitant la gestion des réservations et améliorant le suivi des équipements disponibles.',
 
     responsibilities: [
-      "Développement React",
-      "Développement Node.js",
-      "API GraphQL",
-      "Modélisation PostgreSQL",
-      "Sequelize ORM",
-      "Développement de nouvelles fonctionnalités",
-      "Correction de bugs",
-      "Tests",
+      'Développement React',
+      'Développement Node.js',
+      'API GraphQL',
+      'Modélisation PostgreSQL',
+      'Sequelize ORM',
+      'Développement de nouvelles fonctionnalités',
+      'Correction de bugs',
+      'Tests',
     ],
 
-    team: "Équipe Fullstack",
+    team: 'Équipe Fullstack',
 
-    impact:
-      "Digitalisation du processus de réservation des engins.",
+    impact: 'Digitalisation du processus de réservation des engins.',
 
     screenshots: [],
   },
 
   {
-    id: "ecommerce",
+    id: 'ecommerce',
 
-    title: "Plateforme E-commerce",
+    title: 'Plateforme E-commerce',
 
-    company: "Indépendant",
+    company: 'Indépendant',
 
-    sector: "E-commerce",
+    sector: 'E-commerce',
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "GraphQL",
-      "PostgreSQL",
-      "Sequelize",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Node.js', 'GraphQL', 'PostgreSQL', 'Sequelize', 'TypeScript'],
 
     shortDescription:
       "Développement d'une plateforme de vente en ligne avec gestion des produits, commandes et paiements.",
@@ -264,55 +226,48 @@ export const projects: Project[] = [
       "Participation au développement complet d'une plateforme e-commerce permettant aux utilisateurs de parcourir un catalogue de produits, gérer leur panier et passer leurs commandes.",
 
     challenge:
-      "Créer une application rapide, intuitive et évolutive tout en assurant la gestion de plusieurs milliers de produits.",
+      'Créer une application rapide, intuitive et évolutive tout en assurant la gestion de plusieurs milliers de produits.',
 
     solution:
-      "Développement du frontend React, des API Node.js, utilisation de GraphQL pour les échanges de données et PostgreSQL avec Sequelize pour la gestion des données.",
+      'Développement du frontend React, des API Node.js, utilisation de GraphQL pour les échanges de données et PostgreSQL avec Sequelize pour la gestion des données.',
 
     result:
-      "Une plateforme performante offrant une expérience utilisateur fluide et une navigation optimisée.",
+      'Une plateforme performante offrant une expérience utilisateur fluide et une navigation optimisée.',
 
     responsibilities: [
-      "Développement React",
-      "Développement Node.js",
-      "GraphQL",
-      "Sequelize",
-      "PostgreSQL",
-      "Gestion du panier",
-      "Catalogue produits",
-      "Maintenance",
+      'Développement React',
+      'Développement Node.js',
+      'GraphQL',
+      'Sequelize',
+      'PostgreSQL',
+      'Gestion du panier',
+      'Catalogue produits',
+      'Maintenance',
     ],
 
-    team: "Équipe Fullstack",
+    team: 'Équipe Fullstack',
 
-    impact:
-      "Amélioration de l'expérience utilisateur et optimisation des performances.",
+    impact: "Amélioration de l'expérience utilisateur et optimisation des performances.",
 
     screenshots: [],
   },
 
   {
-    id: "shopify",
+    id: 'shopify',
 
     title: "Optimisation d'une boutique Shopify",
 
-    company: "Indépendant",
+    company: 'Indépendant',
 
-    sector: "E-commerce",
+    sector: 'E-commerce',
 
-    period: "2019 - 2020",
+    period: '2019 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "Shopify",
-      "JavaScript",
-      "Liquid",
-      "HTML",
-      "CSS",
-    ],
+    technologies: ['Shopify', 'JavaScript', 'Liquid', 'HTML', 'CSS'],
 
     shortDescription:
       "Optimisation des performances d'une boutique Shopify afin d'améliorer les temps de chargement et l'expérience utilisateur.",
@@ -324,53 +279,52 @@ export const projects: Project[] = [
       "Identifier les causes des ralentissements tout en conservant l'ensemble des fonctionnalités de la boutique.",
 
     solution:
-      "Audit des performances, suppression des scripts JavaScript inutiles, optimisation du chargement des images, réduction des ressources bloquantes, amélioration du thème Shopify et optimisation du chargement des assets.",
+      'Audit des performances, suppression des scripts JavaScript inutiles, optimisation du chargement des images, réduction des ressources bloquantes, amélioration du thème Shopify et optimisation du chargement des assets.',
 
     result:
-      "Réduction significative du temps de chargement des pages, amélioration des scores Lighthouse et meilleure expérience utilisateur.",
+      'Réduction significative du temps de chargement des pages, amélioration des scores Lighthouse et meilleure expérience utilisateur.',
 
     responsibilities: [
-      "Audit de performance",
-      "Optimisation JavaScript",
-      "Optimisation des images",
-      "Optimisation du thème Shopify",
-      "Réduction des ressources bloquantes",
-      "Amélioration du SEO technique",
+      'Audit de performance',
+      'Optimisation JavaScript',
+      'Optimisation des images',
+      'Optimisation du thème Shopify',
+      'Réduction des ressources bloquantes',
+      'Amélioration du SEO technique',
     ],
 
-    team: "Développement Frontend",
+    team: 'Développement Frontend',
 
-    impact:
-      "Amélioration des performances de la boutique et du référencement naturel.",
+    impact: 'Amélioration des performances de la boutique et du référencement naturel.',
 
     screenshots: [],
   },
 
   {
-    id: "ged",
+    id: 'ged',
 
-    title: "Plateforme de Gestion Électronique de Documents (GED)",
+    title: 'Plateforme de Gestion Électronique de Documents (GED)',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Gestion documentaire • Archivage numérique",
+    sector: 'Gestion documentaire • Archivage numérique',
 
-    period: "Décembre 2021 - Novembre 2024",
+    period: 'Décembre 2021 - Novembre 2024',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
     technologies: [
-      "Angular",
-      "AngularJS",
-      "Node.js",
-      "TypeScript",
-      "JavaScript",
-      "PostgreSQL",
-      "CMIS",
-      "Java",
-      "GitLab",
+      'Angular',
+      'AngularJS',
+      'Node.js',
+      'TypeScript',
+      'JavaScript',
+      'PostgreSQL',
+      'CMIS',
+      'Java',
+      'GitLab',
     ],
 
     shortDescription:
@@ -380,30 +334,29 @@ export const projects: Project[] = [
       "Participation au développement et à la maintenance d'une plateforme GED utilisée pour centraliser, indexer, rechercher et consulter des documents provenant de différents processus métier. L'application était composée de deux interfaces principales : une interface dédiée au traitement documentaire et une seconde interface destinée à la visualisation, à la consultation et au suivi des dossiers.",
 
     challenge:
-      "Faire évoluer une application documentaire manipulant plusieurs millions de documents tout en garantissant sa stabilité, ses performances et la compatibilité avec les processus métier existants.",
+      'Faire évoluer une application documentaire manipulant plusieurs millions de documents tout en garantissant sa stabilité, ses performances et la compatibilité avec les processus métier existants.',
 
     solution:
       "Développement de nouvelles fonctionnalités sur AngularJS et Angular, création d'une nouvelle interface de visualisation documentaire, amélioration des traitements Node.js, maintenance corrective et évolutive, optimisation des traitements backend et participation aux évolutions de l'architecture documentaire reposant sur PostgreSQL et CMIS.",
 
     result:
-      "Une plateforme documentaire plus performante, plus ergonomique et plus simple à maintenir, facilitant aussi bien le traitement que la consultation des documents pour les équipes métier.",
+      'Une plateforme documentaire plus performante, plus ergonomique et plus simple à maintenir, facilitant aussi bien le traitement que la consultation des documents pour les équipes métier.',
 
     responsibilities: [
-      "Développement AngularJS et Angular",
-      "Développement Backend Node.js",
+      'Développement AngularJS et Angular',
+      'Développement Backend Node.js',
       "Création d'une interface de visualisation documentaire",
       "Développement d'une interface de traitement documentaire",
-      "Création de nouvelles fonctionnalités",
-      "Maintenance corrective",
-      "Maintenance évolutive",
-      "Optimisation des traitements backend",
+      'Création de nouvelles fonctionnalités',
+      'Maintenance corrective',
+      'Maintenance évolutive',
+      'Optimisation des traitements backend',
       "Correction d'incidents de production",
-      "Participation aux revues de code",
-      "Travail en méthodologie Agile Scrum",
+      'Participation aux revues de code',
+      'Travail en méthodologie Agile Scrum',
     ],
 
-    team:
-      "3 développeurs, Project Manager, équipe Qualité et équipes métier",
+    team: '3 développeurs, Project Manager, équipe Qualité et équipes métier',
 
     impact:
       "Amélioration des performances, de la stabilité et de l'expérience utilisateur d'une plateforme documentaire utilisée quotidiennement.",
@@ -414,34 +367,34 @@ export const projects: Project[] = [
   },
 
   {
-    id: "accounting",
+    id: 'accounting',
 
-    title: "Numen Expert - Plateforme de Gestion Comptable",
+    title: 'Numen Expert - Plateforme de Gestion Comptable',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Comptabilité • Gestion financière",
+    sector: 'Comptabilité • Gestion financière',
 
-    period: "Décembre 2021 - Novembre 2024",
+    period: 'Décembre 2021 - Novembre 2024',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
     technologies: [
-      "Angular",
-      "AngularJS",
-      "Node.js",
-      "TypeScript",
-      "JavaScript",
-      "PostgreSQL",
-      "CMIS",
-      "Java",
-      "GitLab",
+      'Angular',
+      'AngularJS',
+      'Node.js',
+      'TypeScript',
+      'JavaScript',
+      'PostgreSQL',
+      'CMIS',
+      'Java',
+      'GitLab',
     ],
 
     shortDescription:
-      "Plateforme de gestion comptable permettant le traitement des dossiers clients, le suivi des opérations comptables et la collaboration entre les équipes métier.",
+      'Plateforme de gestion comptable permettant le traitement des dossiers clients, le suivi des opérations comptables et la collaboration entre les équipes métier.',
 
     overview:
       "Participation au développement et à la maintenance de Numen Expert, une application web de gestion comptable composée de deux interfaces complémentaires : une interface dédiée au traitement des données comptables et une seconde permettant le suivi des dossiers ainsi que la consultation des informations métier. Les données étaient stockées dans PostgreSQL et manipulées au travers d'une couche CMIS, avec certains traitements réalisés via des services Java.",
@@ -456,22 +409,21 @@ export const projects: Project[] = [
       "Évolution continue de la plateforme, amélioration de sa stabilité, résolution rapide d'incidents critiques et accompagnement des équipes métier dans leurs activités quotidiennes.",
 
     responsibilities: [
-      "Développement AngularJS",
-      "Développement Backend Node.js",
-      "Développement de nouvelles fonctionnalités",
-      "Maintenance corrective",
-      "Maintenance évolutive",
-      "Création de scripts Node.js",
-      "Migration de données",
-      "Optimisation des traitements",
+      'Développement AngularJS',
+      'Développement Backend Node.js',
+      'Développement de nouvelles fonctionnalités',
+      'Maintenance corrective',
+      'Maintenance évolutive',
+      'Création de scripts Node.js',
+      'Migration de données',
+      'Optimisation des traitements',
       "Analyse d'incidents de production",
-      "Correction de bugs",
-      "Participation aux revues de code",
-      "Travail en méthodologie Agile Scrum",
+      'Correction de bugs',
+      'Participation aux revues de code',
+      'Travail en méthodologie Agile Scrum',
     ],
 
-    team:
-      "3 développeurs, Project Manager et équipes comptables",
+    team: '3 développeurs, Project Manager et équipes comptables',
 
     impact:
       "Contribution à la fiabilité d'une application métier utilisée quotidiennement par les équipes comptables.",
@@ -482,27 +434,21 @@ export const projects: Project[] = [
   },
 
   {
-    id: "data-migration",
+    id: 'data-migration',
 
-    title: "Migration de données France → Madagascar",
+    title: 'Migration de données France → Madagascar',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Migration de données",
+    sector: 'Migration de données',
 
-    period: "2023",
+    period: '2023',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "Node.js",
-      "PostgreSQL",
-      "CMIS",
-      "JavaScript",
-      "GitLab",
-    ],
+    technologies: ['Node.js', 'PostgreSQL', 'CMIS', 'JavaScript', 'GitLab'],
 
     shortDescription:
       "Développement d'un moteur de migration permettant de synchroniser les données entre les environnements France et Madagascar.",
@@ -520,22 +466,21 @@ export const projects: Project[] = [
       "Migration réalisée avec succès sans perte d'information, avec validation des résultats par les équipes métier après contrôle des volumes et des données migrées.",
 
     responsibilities: [
-      "Développement de scripts Node.js",
-      "Extraction des données",
-      "Transformation des données",
-      "Normalisation des valeurs",
-      "Détection des doublons",
-      "Validation des données",
-      "Migration PostgreSQL",
-      "Contrôles de cohérence",
-      "Collaboration avec les équipes métier",
+      'Développement de scripts Node.js',
+      'Extraction des données',
+      'Transformation des données',
+      'Normalisation des valeurs',
+      'Détection des doublons',
+      'Validation des données',
+      'Migration PostgreSQL',
+      'Contrôles de cohérence',
+      'Collaboration avec les équipes métier',
     ],
 
-    team:
-      "Développeurs France, développeurs Madagascar et équipes métier",
+    team: 'Développeurs France, développeurs Madagascar et équipes métier',
 
     impact:
-      "Migration sécurisée garantissant la qualité et la cohérence des données entre les deux environnements.",
+      'Migration sécurisée garantissant la qualité et la cohérence des données entre les deux environnements.',
 
     screenshots: [],
 
@@ -543,28 +488,21 @@ export const projects: Project[] = [
   },
 
   {
-    id: "fec-extractor",
+    id: 'fec-extractor',
 
-    title: "Intégration et évolution du FEC Extractor",
+    title: 'Intégration et évolution du FEC Extractor',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Comptabilité • Import de données",
+    sector: 'Comptabilité • Import de données',
 
-    period: "2023",
+    period: '2023',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "Node.js",
-      "TypeScript",
-      "JavaScript",
-      "PostgreSQL",
-      "CMIS",
-      "GitLab",
-    ],
+    technologies: ['Node.js', 'TypeScript', 'JavaScript', 'PostgreSQL', 'CMIS', 'GitLab'],
 
     shortDescription:
       "Finalisation et intégration d'un moteur d'import des Fichiers des Écritures Comptables (FEC) dans Numen Expert.",
@@ -582,20 +520,19 @@ export const projects: Project[] = [
       "Le moteur a pu être intégré avec succès dans Numen Expert, facilitant l'import automatisé des données comptables et réduisant les traitements manuels des utilisateurs.",
 
     responsibilities: [
-      "Analyse du code existant",
-      "Finalisation du développement",
-      "Intégration dans Numen Expert",
-      "Import des FEC",
-      "Extraction des données comptables",
-      "Import du Plan Comptable Général",
-      "Import des comptes auxiliaires",
-      "Validation des données",
-      "Correction des anomalies",
-      "Tests fonctionnels",
+      'Analyse du code existant',
+      'Finalisation du développement',
+      'Intégration dans Numen Expert',
+      'Import des FEC',
+      'Extraction des données comptables',
+      'Import du Plan Comptable Général',
+      'Import des comptes auxiliaires',
+      'Validation des données',
+      'Correction des anomalies',
+      'Tests fonctionnels',
     ],
 
-    team:
-      "3 développeurs et Project Manager",
+    team: '3 développeurs et Project Manager',
 
     impact:
       "Automatisation du processus d'import des données comptables et amélioration de la productivité des équipes métier.",
@@ -604,27 +541,21 @@ export const projects: Project[] = [
   },
 
   {
-    id: "frt-import",
+    id: 'frt-import',
 
-    title: "Dépôt massif des Fiches de Renseignement Technique (FRT)",
+    title: 'Dépôt massif des Fiches de Renseignement Technique (FRT)',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Automatisation documentaire",
+    sector: 'Automatisation documentaire',
 
-    period: "2024",
+    period: '2024',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "Node.js",
-      "AngularJS",
-      "TypeScript",
-      "PostgreSQL",
-      "CMIS",
-    ],
+    technologies: ['Node.js', 'AngularJS', 'TypeScript', 'PostgreSQL', 'CMIS'],
 
     shortDescription:
       "Développement d'un module permettant l'import massif et l'enrichissement automatique des Fiches de Renseignement Technique.",
@@ -633,222 +564,188 @@ export const projects: Project[] = [
       "Conception d'une fonctionnalité permettant de déposer plusieurs centaines de FRT simultanément. Chaque fichier était analysé, validé et utilisé pour enrichir automatiquement les métadonnées métier des dossiers.",
 
     challenge:
-      "Garantir la qualité des données importées tout en assurant des traitements rapides sur de gros volumes.",
+      'Garantir la qualité des données importées tout en assurant des traitements rapides sur de gros volumes.',
 
     solution:
       "Développement d'un moteur de validation, de parsing et d'enrichissement automatique des propriétés métier avec gestion détaillée des erreurs.",
 
     result:
-      "Réduction importante des traitements manuels et amélioration de la qualité des données.",
+      'Réduction importante des traitements manuels et amélioration de la qualité des données.',
 
     responsibilities: [
-      "Développement Node.js",
-      "Parsing",
-      "Validation",
-      "Import massif",
-      "Gestion des erreurs",
-      "Optimisation des traitements",
+      'Développement Node.js',
+      'Parsing',
+      'Validation',
+      'Import massif',
+      'Gestion des erreurs',
+      'Optimisation des traitements',
     ],
 
-    team: "Équipe Fullstack",
+    team: 'Équipe Fullstack',
 
-    impact:
-      "Automatisation complète du dépôt des FRT.",
+    impact: 'Automatisation complète du dépôt des FRT.',
 
     screenshots: [],
   },
 
   {
-    id: "balance-carree",
+    id: 'balance-carree',
 
-    title: "Balance Carrée",
+    title: 'Balance Carrée',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Comptabilité",
+    sector: 'Comptabilité',
 
-    period: "2024",
+    period: '2024',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "AngularJS",
-      "Node.js",
-      "PostgreSQL",
-      "CMIS",
-    ],
+    technologies: ['AngularJS', 'Node.js', 'PostgreSQL', 'CMIS'],
 
-    shortDescription:
-      "Développement d'un module de calcul de balance comptable.",
+    shortDescription: "Développement d'un module de calcul de balance comptable.",
 
     overview:
       "Développement d'un écran permettant de générer automatiquement une balance carrée avec filtres, calculs et export.",
 
-    challenge:
-      "Traiter rapidement de grands volumes d'écritures comptables.",
+    challenge: "Traiter rapidement de grands volumes d'écritures comptables.",
 
-    solution:
-      "Optimisation des requêtes et développement d'un moteur de calcul côté backend.",
+    solution: "Optimisation des requêtes et développement d'un moteur de calcul côté backend.",
 
-    result:
-      "Calcul rapide et fiable des balances comptables.",
+    result: 'Calcul rapide et fiable des balances comptables.',
 
     responsibilities: [
-      "Développement AngularJS",
-      "Développement Node.js",
-      "Calcul comptable",
-      "Export CSV",
-      "Optimisation",
+      'Développement AngularJS',
+      'Développement Node.js',
+      'Calcul comptable',
+      'Export CSV',
+      'Optimisation',
     ],
 
-    team: "Équipe Comptabilité",
+    team: 'Équipe Comptabilité',
 
-    impact:
-      "Réduction du temps nécessaire à la génération des balances.",
+    impact: 'Réduction du temps nécessaire à la génération des balances.',
 
     screenshots: [],
   },
 
   {
-    id: "workbatch",
+    id: 'workbatch',
 
-    title: "Optimisation du moteur WorkBatch",
+    title: 'Optimisation du moteur WorkBatch',
 
-    company: "NUMEN Madagascar",
+    company: 'NUMEN Madagascar',
 
-    sector: "Traitement documentaire",
+    sector: 'Traitement documentaire',
 
-    period: "2023",
+    period: '2023',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "Node.js",
-      "TypeScript",
-      "CMIS",
-      "PostgreSQL",
-    ],
+    technologies: ['Node.js', 'TypeScript', 'CMIS', 'PostgreSQL'],
 
-    shortDescription:
-      "Optimisation du moteur de création et de traitement des WorkBatch.",
+    shortDescription: 'Optimisation du moteur de création et de traitement des WorkBatch.',
 
     overview:
-      "Participation au développement des traitements permettant de créer automatiquement des lots documentaires destinés aux opérateurs.",
+      'Participation au développement des traitements permettant de créer automatiquement des lots documentaires destinés aux opérateurs.',
 
-    challenge:
-      "Réduire le temps de création des lots et éviter les doublons.",
+    challenge: 'Réduire le temps de création des lots et éviter les doublons.',
 
-    solution:
-      "Optimisation des algorithmes de regroupement, de tri et de sélection des documents.",
+    solution: 'Optimisation des algorithmes de regroupement, de tri et de sélection des documents.',
 
-    result:
-      "Traitements plus rapides et meilleure répartition des documents.",
+    result: 'Traitements plus rapides et meilleure répartition des documents.',
 
     responsibilities: [
-      "Node.js",
-      "Optimisation",
-      "Algorithmes",
-      "Traitements batch",
-      "Correction de bugs",
+      'Node.js',
+      'Optimisation',
+      'Algorithmes',
+      'Traitements batch',
+      'Correction de bugs',
     ],
 
-    team: "Équipe GED",
+    team: 'Équipe GED',
 
-    impact:
-      "Amélioration des performances des traitements documentaires.",
+    impact: 'Amélioration des performances des traitements documentaires.',
 
     screenshots: [],
   },
 
   {
-    id: "restaurant",
+    id: 'restaurant',
 
-    title: "Plateforme de Commande en Ligne",
+    title: 'Plateforme de Commande en Ligne',
 
-    company: "NOGAE Développement",
+    company: 'NOGAE Développement',
 
-    sector: "Restauration",
+    sector: 'Restauration',
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "JavaScript",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Node.js', 'JavaScript', 'TypeScript'],
 
-    shortDescription:
-      "Application de commande en ligne avec suivi en temps réel des commandes.",
+    shortDescription: 'Application de commande en ligne avec suivi en temps réel des commandes.',
 
     overview:
       "Développement d'une plateforme permettant aux clients de consulter les menus, passer leurs commandes en ligne et suivre leur préparation jusqu'à la livraison.",
 
     challenge:
-      "Créer une expérience utilisateur simple et rapide tout en assurant un suivi en temps réel des commandes.",
+      'Créer une expérience utilisateur simple et rapide tout en assurant un suivi en temps réel des commandes.',
 
     solution:
-      "Développement des modules de gestion des menus, commandes, notifications et suivi des statuts en temps réel.",
+      'Développement des modules de gestion des menus, commandes, notifications et suivi des statuts en temps réel.',
 
     result:
-      "Une plateforme améliorant le parcours client et simplifiant la gestion des commandes pour le restaurant.",
+      'Une plateforme améliorant le parcours client et simplifiant la gestion des commandes pour le restaurant.',
 
     responsibilities: [
-      "Développement Frontend React",
-      "Développement Backend Node.js",
-      "Gestion des commandes",
-      "Gestion des menus",
-      "Notifications",
-      "Correction de bugs",
+      'Développement Frontend React',
+      'Développement Backend Node.js',
+      'Gestion des commandes',
+      'Gestion des menus',
+      'Notifications',
+      'Correction de bugs',
     ],
 
-    team:
-      "Développeurs Frontend, Backend et Équipe Produit",
+    team: 'Développeurs Frontend, Backend et Équipe Produit',
 
-    impact:
-      "Digitalisation du processus de commande et amélioration de l'expérience client.",
+    impact: "Digitalisation du processus de commande et amélioration de l'expérience client.",
 
     screenshots: [],
   },
 
   {
-    id: "tourism",
+    id: 'tourism',
 
-    title: "Guide Touristique Interactif",
+    title: 'Guide Touristique Interactif',
 
-    company: "NOGAE Développement",
+    company: 'NOGAE Développement',
 
-    sector: "Tourisme",
+    sector: 'Tourisme',
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Sequelize",
-    ],
+    technologies: ['React', 'Node.js', 'TypeScript', 'Sequelize'],
 
     shortDescription:
-      "Application permettant aux voyageurs de localiser rapidement les services essentiels.",
+      'Application permettant aux voyageurs de localiser rapidement les services essentiels.',
 
     overview:
       "Développement d'une application web destinée aux touristes afin de localiser facilement les banques, hôpitaux et autres services indispensables grâce à une carte interactive.",
 
     challenge:
-      "Permettre une recherche rapide et intuitive des services essentiels dans une ville inconnue.",
+      'Permettre une recherche rapide et intuitive des services essentiels dans une ville inconnue.',
 
     solution:
       "Développement d'une carte interactive, ajout de filtres avancés et optimisation de la navigation.",
@@ -857,46 +754,39 @@ export const projects: Project[] = [
       "Une application facilitant les déplacements des touristes et l'accès aux services de proximité.",
 
     responsibilities: [
-      "Développement React",
-      "Développement Backend",
-      "Intégration cartographique",
-      "Développement des filtres",
-      "Optimisation UX",
+      'Développement React',
+      'Développement Backend',
+      'Intégration cartographique',
+      'Développement des filtres',
+      'Optimisation UX',
     ],
 
-    team:
-      "Développeurs Frontend & Backend",
+    team: 'Développeurs Frontend & Backend',
 
-    impact:
-      "Amélioration de l'accessibilité des services pour les voyageurs.",
+    impact: "Amélioration de l'accessibilité des services pour les voyageurs.",
 
     screenshots: [],
   },
 
   {
-    id: "event",
+    id: 'event',
 
-    title: "Plateforme de réservation événementielle",
+    title: 'Plateforme de réservation événementielle',
 
-    company: "NOGAE Développement",
+    company: 'NOGAE Développement',
 
-    sector: "Événementiel",
+    sector: 'Événementiel',
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "GraphQL",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Node.js', 'GraphQL', 'TypeScript'],
 
     shortDescription:
-      "Application de gestion des inscriptions et réservations pour un événement médical international.",
+      'Application de gestion des inscriptions et réservations pour un événement médical international.',
 
     overview:
       "Développement d'une plateforme permettant aux participants de s'inscrire à un congrès médical organisé en Guadeloupe, avec gestion des disponibilités et des réservations.",
@@ -908,49 +798,43 @@ export const projects: Project[] = [
       "Développement d'un système complet de réservation avec gestion des places disponibles, notifications et suivi des inscriptions.",
 
     result:
-      "Une plateforme facilitant le travail des organisateurs et offrant une expérience fluide aux participants.",
+      'Une plateforme facilitant le travail des organisateurs et offrant une expérience fluide aux participants.',
 
     responsibilities: [
-      "Développement Frontend React",
-      "Développement Backend Node.js",
-      "API GraphQL",
-      "Gestion des réservations",
-      "Notifications",
-      "Tests et correction de bugs",
+      'Développement Frontend React',
+      'Développement Backend Node.js',
+      'API GraphQL',
+      'Gestion des réservations',
+      'Notifications',
+      'Tests et correction de bugs',
     ],
 
-    team:
-      "Équipe Frontend, Backend et Chef de projet",
+    team: 'Équipe Frontend, Backend et Chef de projet',
 
-    impact:
-      "Automatisation complète du processus de réservation.",
+    impact: 'Automatisation complète du processus de réservation.',
 
     screenshots: [],
   },
 
   {
-    id: "elearning",
+    id: 'elearning',
 
     title: "Plateforme d'E-learning",
 
-    company: "NOGAE Développement",
+    company: 'NOGAE Développement',
 
-    sector: "Éducation",
+    sector: 'Éducation',
 
-    period: "2018 - 2020",
+    period: '2018 - 2020',
 
-    status: "NDA",
+    status: 'NDA',
 
-    thumbnail: "/images/software.jpg",
+    thumbnail: '/images/software.jpg',
 
-    technologies: [
-      "React",
-      "Node.js",
-      "TypeScript",
-    ],
+    technologies: ['React', 'Node.js', 'TypeScript'],
 
     shortDescription:
-      "Plateforme de formation en ligne destinée aux étudiants et aux établissements scolaires.",
+      'Plateforme de formation en ligne destinée aux étudiants et aux établissements scolaires.',
 
     overview:
       "Développement d'une application web permettant aux étudiants d'accéder à des contenus pédagogiques, de suivre leurs cours et de consulter leurs ressources en ligne.",
@@ -965,19 +849,17 @@ export const projects: Project[] = [
       "Une plateforme facilitant l'accès aux contenus pédagogiques et améliorant l'expérience des utilisateurs.",
 
     responsibilities: [
-      "Analyse des besoins",
-      "Développement React",
-      "Développement Node.js",
-      "Conception UI",
-      "Optimisation des performances",
-      "Maintenance corrective",
+      'Analyse des besoins',
+      'Développement React',
+      'Développement Node.js',
+      'Conception UI',
+      'Optimisation des performances',
+      'Maintenance corrective',
     ],
 
-    team:
-      "Développeurs et Chef de projet",
+    team: 'Développeurs et Chef de projet',
 
-    impact:
-      "Digitalisation de l'accès aux ressources pédagogiques.",
+    impact: "Digitalisation de l'accès aux ressources pédagogiques.",
 
     screenshots: [],
   },

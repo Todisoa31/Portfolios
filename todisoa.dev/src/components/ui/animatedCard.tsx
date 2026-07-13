@@ -1,17 +1,13 @@
-"use client";
+'use client';
 
-import { motion, HTMLMotionProps } from "framer-motion";
-import { ReactNode } from "react";
+import { motion, HTMLMotionProps } from 'framer-motion';
+import { ReactNode } from 'react';
 
-type Props = HTMLMotionProps<"div"> & {
+type Props = HTMLMotionProps<'div'> & {
   children: ReactNode;
 };
 
-export default function AnimatedCard({
-  children,
-  className = "",
-  ...props
-}: Props) {
+export default function AnimatedCard({ children, className = '', ...props }: Props) {
   return (
     <motion.div
       whileHover={{

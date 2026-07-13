@@ -1,21 +1,17 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import { categories, skills } from "@/src/data/skills";
+import { categories, skills } from '@/src/data/skills';
 
-import SkillCard from "./skillCard";
+import SkillCard from './skillCard';
 
 export default function SkillsSection() {
   return (
-    <section
-      id="skills"
-      className="relative py-16 sm:py-24 overflow-hidden"
-    >
+    <section id="skills" className="relative py-16 sm:py-24 overflow-hidden">
       {/* Background */}
 
       <div className="absolute inset-0 -z-10">
-
         <div
           className="
             absolute
@@ -32,12 +28,9 @@ export default function SkillsSection() {
             sm:blur-[150px]
           "
         />
-
       </div>
 
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-
         {/* Title */}
 
         <motion.div
@@ -50,14 +43,13 @@ export default function SkillsSection() {
             y: 0,
           }}
           transition={{
-            duration: .6,
+            duration: 0.6,
           }}
           viewport={{
             once: true,
           }}
           className="text-center"
         >
-
           <span
             className="
               inline-block
@@ -79,7 +71,6 @@ export default function SkillsSection() {
             Technologies
           </span>
 
-
           <h2
             className="
               mt-5
@@ -90,7 +81,6 @@ export default function SkillsSection() {
           >
             Mes compétences
           </h2>
-
 
           <p
             className="
@@ -104,31 +94,23 @@ export default function SkillsSection() {
               sm:leading-8
             "
           >
-            Plus de <strong>6 années d&apos;expérience</strong> dans le
-            développement d&apos;applications web modernes, performantes et
-            évolutives avec les technologies JavaScript et TypeScript.
-            Passez votre souris sur une technologie pour découvrir mon
+            Plus de <strong>6 années d&apos;expérience</strong> dans le développement
+            d&apos;applications web modernes, performantes et évolutives avec les technologies
+            JavaScript et TypeScript. Passez votre souris sur une technologie pour découvrir mon
             expérience et les réalisations associées.
           </p>
-
         </motion.div>
-
 
         {/* Skills */}
 
         <div className="mt-16 space-y-16">
-
           {categories.map((category) => {
-
             const Icon = category.icon;
 
-            const categorySkills = skills.filter(
-              (skill) => skill.category === category.key
-            );
+            const categorySkills = skills.filter((skill) => skill.category === category.key);
 
             return (
               <div key={category.key}>
-
                 <div className="mb-8 flex items-center gap-4">
                   <div
                     className="flex h-12 w-12 items-center justify-center rounded-xl"
@@ -136,10 +118,7 @@ export default function SkillsSection() {
                       backgroundColor: `${category.color}20`,
                     }}
                   >
-                    <Icon
-                      size={28}
-                      color={category.color}
-                    />
+                    <Icon size={28} color={category.color} />
                   </div>
 
                   <div>
@@ -181,20 +160,14 @@ export default function SkillsSection() {
                       }}
                       viewport={{ once: true }}
                     >
-                      <SkillCard
-                        skill={skill}
-                        index={index}
-                      />
+                      <SkillCard skill={skill} index={index} />
                     </motion.div>
                   ))}
                 </div>
-
               </div>
             );
           })}
-
         </div>
-
       </div>
     </section>
   );

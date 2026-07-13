@@ -1,19 +1,19 @@
-"use client";
+'use client';
 
-import Popper from "@mui/material/Popper";
-import Drawer from "@mui/material/Drawer";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import Popper from '@mui/material/Popper';
+import Drawer from '@mui/material/Drawer';
+import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import useMediaQuery from '@mui/material/useMediaQuery';
 // import { useTheme } from "@mui/material/styles";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { FaCheckCircle } from "react-icons/fa";
-import { IoArrowDownCircle  } from "react-icons/io5";
+import { AnimatePresence, motion } from 'framer-motion';
+import { FaCheckCircle } from 'react-icons/fa';
+import { IoArrowDownCircle } from 'react-icons/io5';
 
-import SkillStars from "./skillStars";
+import SkillStars from './skillStars';
 
-import { Skill } from "@/src/types/skill";
+import { Skill } from '@/src/types/skill';
 
 interface Props {
   skill: Skill;
@@ -26,30 +26,17 @@ interface Props {
 const MAX_ROWS = 5;
 const GRID_COLUMNS = 4;
 
-export default function SkillDetail({
-  skill,
-  anchorEl,
-  open,
-  index,
-  onClose,
-}: Props) {
+export default function SkillDetail({ skill, anchorEl, open, index, onClose }: Props) {
   // const theme = useTheme();
-  const isTouchLayout = useMediaQuery("(max-width:1200px)");
+  const isTouchLayout = useMediaQuery('(max-width:1200px)');
 
-  const placement =
-    index % GRID_COLUMNS < GRID_COLUMNS / 2
-      ? "right-start"
-      : "left-start";
+  const placement = index % GRID_COLUMNS < GRID_COLUMNS / 2 ? 'right-start' : 'left-start';
 
   const columns = Array.from(
     {
       length: Math.ceil(skill.details.length / MAX_ROWS),
     },
-    (_, i) =>
-      skill.details.slice(
-        i * MAX_ROWS,
-        (i + 1) * MAX_ROWS
-      )
+    (_, i) => skill.details.slice(i * MAX_ROWS, (i + 1) * MAX_ROWS)
   );
 
   const Content = (
@@ -77,9 +64,9 @@ export default function SkillDetail({
       }}
       className="overflow-hidden rounded-t-3xl md:rounded-3xl border border-white/10 bg-gray-900/95 backdrop-blur-xl"
       style={{
-        width: "100%",
-        maxWidth: isTouchLayout ? "100vw" : 1000,
-        maxHeight: "90dvh",
+        width: '100%',
+        maxWidth: isTouchLayout ? '100vw' : 1000,
+        maxHeight: '90dvh',
       }}
     >
       {/* Header */}
@@ -94,30 +81,23 @@ export default function SkillDetail({
           <IconButton
             onClick={onClose}
             sx={{
-              position: "absolute",
+              position: 'absolute',
               right: 12,
               top: 12,
-              color: "white",
+              color: 'white',
             }}
           >
-            <IoArrowDownCircle  />
+            <IoArrowDownCircle />
           </IconButton>
         )}
 
         <div className="flex justify-center gap-4">
-          <skill.icon
-            size={46}
-            color={skill.color}
-          />
+          <skill.icon size={46} color={skill.color} />
 
           <div>
-            <h3 className="text-2xl font-bold">
-              {skill.name}
-            </h3>
+            <h3 className="text-2xl font-bold">{skill.name}</h3>
 
-            <p className="mt-1 text-gray-400">
-              {skill.experience}
-            </p>
+            <p className="mt-1 text-gray-400">{skill.experience}</p>
           </div>
         </div>
 
@@ -128,23 +108,16 @@ export default function SkillDetail({
 
       <Divider
         sx={{
-          borderColor: "rgba(255,255,255,.08)",
+          borderColor: 'rgba(255,255,255,.08)',
         }}
       />
 
       {/* Details */}
 
       <div className="p-8 max-h-[70vh] overflow-y-auto">
-        <div
-          className={`${
-            isTouchLayout ? "space-y-4" : "flex gap-10"
-          }`}
-        >
+        <div className={`${isTouchLayout ? 'space-y-4' : 'flex gap-10'}`}>
           {columns.map((column, columnIndex) => (
-            <div
-              key={columnIndex}
-              className={isTouchLayout ? "" : "min-w-55 space-y-4"}
-            >
+            <div key={columnIndex} className={isTouchLayout ? '' : 'min-w-55 space-y-4'}>
               {column.map((detail, detailIndex) => (
                 <motion.div
                   key={detail}
@@ -157,23 +130,14 @@ export default function SkillDetail({
                     x: 0,
                   }}
                   transition={{
-                    delay:
-                      (columnIndex * MAX_ROWS +
-                        detailIndex) *
-                      0.05,
+                    delay: (columnIndex * MAX_ROWS + detailIndex) * 0.05,
                     duration: 0.25,
                   }}
                   className="flex items-start gap-4 py-2"
                 >
-                  <FaCheckCircle
-                    size={18}
-                    color={skill.color}
-                    className="mt-1 shrink-0"
-                  />
+                  <FaCheckCircle size={18} color={skill.color} className="mt-1 shrink-0" />
 
-                  <span className="leading-7 text-gray-300 wrap-break-word">
-                    {detail}
-                  </span>
+                  <span className="leading-7 text-gray-300 wrap-break-word">{detail}</span>
                 </motion.div>
               ))}
             </div>
@@ -185,23 +149,23 @@ export default function SkillDetail({
 
   if (isTouchLayout) {
     return (
-        <Drawer
-          anchor="bottom"
-          open={open}
-          onClose={onClose}
-          slotProps={{
-            paper: {
-              sx: {
-                background: "transparent",
-                boxShadow: "none",
-                overflow: "hidden",
-                paddingBottom: "env(safe-area-inset-bottom)",
-              },
+      <Drawer
+        anchor="bottom"
+        open={open}
+        onClose={onClose}
+        slotProps={{
+          paper: {
+            sx: {
+              background: 'transparent',
+              boxShadow: 'none',
+              overflow: 'hidden',
+              paddingBottom: 'env(safe-area-inset-bottom)',
             },
-          }}
-        >
-          {Content}
-        </Drawer>
+          },
+        }}
+      >
+        {Content}
+      </Drawer>
     );
   }
 
@@ -212,17 +176,17 @@ export default function SkillDetail({
       placement={placement}
       modifiers={[
         {
-          name: "offset",
+          name: 'offset',
           options: {
             offset: [20, 0],
           },
         },
         {
-          name: "flip",
+          name: 'flip',
           enabled: true,
         },
         {
-          name: "preventOverflow",
+          name: 'preventOverflow',
           enabled: true,
         },
       ]}
@@ -230,9 +194,7 @@ export default function SkillDetail({
         zIndex: 2000,
       }}
     >
-      <AnimatePresence>
-        {open && Content}
-      </AnimatePresence>
+      <AnimatePresence>{open && Content}</AnimatePresence>
     </Popper>
   );
 }

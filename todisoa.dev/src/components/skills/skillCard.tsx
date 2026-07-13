@@ -1,40 +1,34 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import useMediaQuery from "@mui/material/useMediaQuery";
+import useMediaQuery from '@mui/material/useMediaQuery';
 // import { useTheme } from "@mui/material/styles";
 
-import SkillStars from "./skillStars";
-import SkillDetail from "./skillDetail";
+import SkillStars from './skillStars';
+import SkillDetail from './skillDetail';
 
-import { Skill } from "@/src/types/skill";
+import { Skill } from '@/src/types/skill';
 
 interface Props {
   skill: Skill;
   index: number;
 }
 
-export default function SkillCard({
-  skill,
-  index,
-}: Props) {
+export default function SkillCard({ skill, index }: Props) {
   // const theme = useTheme();
-  const isTouchLayout = useMediaQuery("(max-width:1200px)");
+  const isTouchLayout = useMediaQuery('(max-width:1200px)');
 
-  const [anchorEl, setAnchorEl] =
-    useState<HTMLElement | null>(null);
+  const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
   const open = Boolean(anchorEl);
 
   const Icon = skill.icon;
 
   // Desktop uniquement
-  const handleMouseEnter = (
-    event: React.MouseEvent<HTMLElement>
-  ) => {
+  const handleMouseEnter = (event: React.MouseEvent<HTMLElement>) => {
     if (isTouchLayout) return;
 
     setAnchorEl(event.currentTarget);
@@ -48,9 +42,7 @@ export default function SkillCard({
   };
 
   // Mobile uniquement
-  const handleClick = (
-    event: React.MouseEvent<HTMLElement>
-  ) => {
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     if (!isTouchLayout) return;
 
     setAnchorEl(event.currentTarget);
@@ -72,7 +64,7 @@ export default function SkillCard({
             : undefined
         }
         transition={{
-          type: "spring",
+          type: 'spring',
           stiffness: 250,
           damping: 18,
         }}
@@ -96,9 +88,7 @@ export default function SkillCard({
             overflow-hidden
           "
           style={{
-            boxShadow: open
-              ? `0 0 35px ${skill.color}55`
-              : "0 10px 30px rgba(0,0,0,.35)",
+            boxShadow: open ? `0 0 35px ${skill.color}55` : '0 10px 30px rgba(0,0,0,.35)',
           }}
         >
           {/* Glow */}
@@ -172,17 +162,13 @@ export default function SkillCard({
           {/* Étoiles */}
 
           <div className="relative mt-5 flex justify-center">
-            <SkillStars
-              stars={skill.stars}
-            />
+            <SkillStars stars={skill.stars} />
           </div>
 
           {/* Indication sur mobile */}
 
           {isTouchLayout && (
-            <p className="mt-4 text-center text-xs text-gray-500">
-              Appuyez pour voir les détails
-            </p>
+            <p className="mt-4 text-center text-xs text-gray-500">Appuyez pour voir les détails</p>
           )}
         </div>
       </motion.div>

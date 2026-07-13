@@ -1,13 +1,12 @@
-"use client";
+'use client';
 
-import { Button } from "@mui/material";
-import { motion } from "framer-motion";
+import { Button } from '@mui/material';
+import { motion } from 'framer-motion';
 
 export default function Accueil() {
   return (
     <section className="flex  items-center justify-center px-4 sm:px-6 py-16">
       <div className="max-w-5xl mx-auto text-center">
-
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -23,9 +22,7 @@ export default function Accueil() {
           "
         >
           TODISOA HERINJANAHARY
-          <span className="block text-yellow-400">
-            Jean Albin Elie
-          </span>
+          <span className="block text-yellow-400">Jean Albin Elie</span>
         </motion.h1>
 
         <motion.h2
@@ -55,9 +52,8 @@ export default function Accueil() {
             sm:leading-8
           "
         >
-          Plus de 6 ans d&apos;expérience dans le développement
-          d&apos;applications web performantes avec React,
-          Next.js, Node.js et NestJS.
+          Plus de 6 ans d&apos;expérience dans le développement d&apos;applications web performantes
+          avec React, Next.js, Node.js et NestJS.
         </p>
 
         <div className="mt-10 flex justify-center">
@@ -69,20 +65,19 @@ export default function Accueil() {
             size="large"
             sx={{
               width: {
-                xs: "100%",
-                sm: "auto",
+                xs: '100%',
+                sm: 'auto',
               },
               maxWidth: 320,
               py: 1.5,
               borderRadius: 2,
               fontWeight: 600,
-              textTransform: "none",
+              textTransform: 'none',
             }}
           >
             Télécharger mon CV
           </Button>
         </div>
-
       </div>
     </section>
   );

@@ -1,16 +1,14 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { experiences } from "../data/experiences";
+import { motion } from 'framer-motion';
+import { experiences } from '../data/experiences';
 
 export default function Experience() {
   return (
-    <section
-      id="experience"
-      className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24"
-    >
+    <section id="experience" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
       <div className="text-center mb-12 sm:mb-16">
-        <span className="
+        <span
+          className="
               inline-block
               rounded-full
               border
@@ -25,28 +23,24 @@ export default function Experience() {
               tracking-widest
               uppercase
               text-yellow-400
-            ">
+            "
+        >
           Mon parcours
         </span>
 
-        <h2 className="mt-3 text-3xl sm:text-5xl font-bold">
-          Expériences professionnelles
-        </h2>
+        <h2 className="mt-3 text-3xl sm:text-5xl font-bold">Expériences professionnelles</h2>
 
         <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-gray-400 leading-7">
-          Plus de 6 ans d&apos;expérience dans le développement
-          d&apos;applications web modernes, de plateformes métiers
-          et de solutions Fullstack.
+          Plus de 6 ans d&apos;expérience dans le développement d&apos;applications web modernes, de
+          plateformes métiers et de solutions Fullstack.
         </p>
       </div>
 
       <div className="relative">
-
         {/* Ligne verticale */}
         <div className="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gray-700" />
 
         <div className="space-y-10">
-
           {experiences.map((experience, index) => (
             <motion.div
               key={experience.period}
@@ -97,19 +91,12 @@ export default function Experience() {
                 "
               >
                 <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
-
                   <div>
-                    <h3 className="text-yellow-400 font-semibold">
-                      {experience.period}
-                    </h3>
+                    <h3 className="text-yellow-400 font-semibold">{experience.period}</h3>
 
-                    <h2 className="mt-1 text-xl sm:text-2xl font-bold">
-                      {experience.position}
-                    </h2>
+                    <h2 className="mt-1 text-xl sm:text-2xl font-bold">{experience.position}</h2>
 
-                    <p className="mt-1 text-gray-300">
-                      {experience.company}
-                    </p>
+                    <p className="mt-1 text-gray-300">{experience.company}</p>
                   </div>
 
                   <div className="sm:text-right">
@@ -117,11 +104,9 @@ export default function Experience() {
                       {experience.sector}
                     </span>
                   </div>
-
                 </div>
 
                 <div className="mt-8 flex flex-wrap gap-3">
-
                   {experience.technologies.map((tech) => (
                     <span
                       key={tech}
@@ -142,12 +127,10 @@ export default function Experience() {
                       {tech}
                     </span>
                   ))}
-
                 </div>
               </div>
             </motion.div>
           ))}
-
         </div>
       </div>
     </section>

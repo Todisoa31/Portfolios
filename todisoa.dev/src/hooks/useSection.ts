@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useInView } from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer';
 
 export function useSection() {
   const { ref, inView } = useInView({

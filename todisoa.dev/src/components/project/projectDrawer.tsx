@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import {
   Box,
@@ -12,11 +12,11 @@ import {
   ImageList,
   ImageListItem,
   IconButton,
-} from "@mui/material";
+} from '@mui/material';
 
-import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 
-import { Project } from "../../types/project";
+import { Project } from '../../types/project';
 
 interface Props {
   project: Project | null;
@@ -24,11 +24,7 @@ interface Props {
   onClose: () => void;
 }
 
-export default function ProjectDrawer({
-  project,
-  open,
-  onClose,
-}: Props) {
+export default function ProjectDrawer({ project, open, onClose }: Props) {
   if (!project) return null;
 
   return (
@@ -40,26 +36,26 @@ export default function ProjectDrawer({
         paper: {
           sx: {
             width: {
-              xs: "100%",
+              xs: '100%',
               sm: 600,
               md: 700,
             },
-            bgcolor: "#111827",
-            color: "white",
+            bgcolor: '#111827',
+            color: 'white',
           },
         },
       }}
     >
       <Box
         sx={{
-          height: "100%",
-          overflowY: "auto",
+          height: '100%',
+          overflowY: 'auto',
 
-          scrollbarWidth: "none",
-          msOverflowStyle: "none",
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
 
-          "&::-webkit-scrollbar": {
-            display: "none",
+          '&::-webkit-scrollbar': {
+            display: 'none',
           },
         }}
       >
@@ -67,12 +63,12 @@ export default function ProjectDrawer({
 
         <Box
           sx={{
-            position: "relative",
+            position: 'relative',
             minHeight: {
               xs: 260,
               md: 320,
             },
-            overflow: "hidden",
+            overflow: 'hidden',
           }}
         >
           {/* Image */}
@@ -82,34 +78,32 @@ export default function ProjectDrawer({
             src={project.thumbnail}
             alt={project.title}
             sx={{
-              position: "absolute",
+              position: 'absolute',
               inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
             }}
           />
-
 
           {/* Overlay */}
 
           <Box
             sx={{
-              position: "absolute",
+              position: 'absolute',
               inset: 0,
               zIndex: 1,
               background:
-                "linear-gradient(to top, rgba(17,24,39,.95), rgba(17,24,39,.35), transparent)",
+                'linear-gradient(to top, rgba(17,24,39,.95), rgba(17,24,39,.35), transparent)',
             }}
           />
-
 
           {/* Back Button */}
 
           <IconButton
             onClick={onClose}
             sx={{
-              position: "absolute",
+              position: 'absolute',
 
               top: {
                 xs: 12,
@@ -126,31 +120,30 @@ export default function ProjectDrawer({
 
               zIndex: 10,
 
-              bgcolor: "rgba(17,24,39,.55)",
+              bgcolor: 'rgba(17,24,39,.55)',
 
-              backdropFilter: "blur(12px)",
+              backdropFilter: 'blur(12px)',
 
-              border: "1px solid rgba(255,255,255,.25)",
+              border: '1px solid rgba(255,255,255,.25)',
 
-              color: "white",
+              color: 'white',
 
-              transition: "all .3s ease",
+              transition: 'all .3s ease',
 
-              "&:hover": {
-                bgcolor: "rgba(17,24,39,.85)",
-                transform: "translateX(-4px)",
+              '&:hover': {
+                bgcolor: 'rgba(17,24,39,.85)',
+                transform: 'translateX(-4px)',
               },
             }}
           >
             <ArrowBackIosNewRoundedIcon fontSize="small" />
           </IconButton>
 
-
           {/* Title */}
 
           <Box
             sx={{
-              position: "absolute",
+              position: 'absolute',
 
               bottom: {
                 xs: 16,
@@ -170,35 +163,32 @@ export default function ProjectDrawer({
               zIndex: 5,
             }}
           >
-
             <Typography
               variant="h4"
               sx={{
                 fontWeight: 800,
 
                 fontSize: {
-                  xs: "1.8rem",
-                  md: "2.2rem",
+                  xs: '1.8rem',
+                  md: '2.2rem',
                 },
 
                 lineHeight: 1.2,
 
-                textShadow:
-                  "0 4px 15px rgba(0,0,0,.5)",
+                textShadow: '0 4px 15px rgba(0,0,0,.5)',
               }}
               gutterBottom
             >
               {project.title}
             </Typography>
 
-
             <Typography
               sx={{
-                color: "rgba(255,255,255,.8)",
+                color: 'rgba(255,255,255,.8)',
 
                 fontSize: {
-                  xs: ".9rem",
-                  md: "1rem",
+                  xs: '.9rem',
+                  md: '1rem',
                 },
 
                 lineHeight: 1.6,
@@ -206,9 +196,7 @@ export default function ProjectDrawer({
             >
               {project.shortDescription}
             </Typography>
-
           </Box>
-
         </Box>
 
         {/* ================= CONTENT ================= */}
@@ -221,32 +209,19 @@ export default function ProjectDrawer({
             spacing={1}
             useFlexGap
             sx={{
-              flexWrap: "wrap",
+              flexWrap: 'wrap',
               mb: 4,
             }}
           >
-            <Chip
-              label={project.company}
-              color="primary"
-            />
+            <Chip label={project.company} color="primary" />
 
-            <Chip
-              label={project.period}
-              variant="outlined"
-            />
+            <Chip label={project.period} variant="outlined" />
 
-            <Chip
-              label={project.sector}
-              variant="outlined"
-            />
+            <Chip label={project.sector} variant="outlined" />
 
             <Chip
               label={project.status}
-              color={
-                project.status === "Public"
-                  ? "success"
-                  : "warning"
-              }
+              color={project.status === 'Public' ? 'success' : 'warning'}
             />
           </Stack>
 
@@ -255,8 +230,8 @@ export default function ProjectDrawer({
           <Card
             sx={{
               mb: 3,
-              bgcolor: "rgba(255,255,255,.04)",
-              border: "1px solid rgba(255,255,255,.06)",
+              bgcolor: 'rgba(255,255,255,.04)',
+              border: '1px solid rgba(255,255,255,.06)',
             }}
           >
             <CardContent>
@@ -285,7 +260,7 @@ export default function ProjectDrawer({
           <Card
             sx={{
               mb: 3,
-              bgcolor: "rgba(255,99,99,.08)",
+              bgcolor: 'rgba(255,99,99,.08)',
             }}
           >
             <CardContent>
@@ -314,7 +289,7 @@ export default function ProjectDrawer({
           <Card
             sx={{
               mb: 3,
-              bgcolor: "rgba(59,130,246,.08)",
+              bgcolor: 'rgba(59,130,246,.08)',
             }}
           >
             <CardContent>
@@ -343,7 +318,7 @@ export default function ProjectDrawer({
           <Card
             sx={{
               mb: 4,
-              bgcolor: "rgba(34,197,94,.08)",
+              bgcolor: 'rgba(34,197,94,.08)',
             }}
           >
             <CardContent>
@@ -373,7 +348,7 @@ export default function ProjectDrawer({
             variant="h6"
             sx={{
               fontWeight: 700,
-               mb: 2,
+              mb: 2,
             }}
           >
             Responsabilités
@@ -384,13 +359,11 @@ export default function ProjectDrawer({
               <Card
                 key={item}
                 sx={{
-                  bgcolor: "rgba(255,255,255,.03)",
+                  bgcolor: 'rgba(255,255,255,.03)',
                 }}
               >
                 <CardContent>
-                  <Typography>
-                    ✓ {item}
-                  </Typography>
+                  <Typography>✓ {item}</Typography>
                 </CardContent>
               </Card>
             ))}
@@ -413,17 +386,12 @@ export default function ProjectDrawer({
             spacing={1}
             useFlexGap
             sx={{
-              flexWrap: "wrap",
+              flexWrap: 'wrap',
               mb: 4,
             }}
           >
             {project.technologies.map((tech) => (
-              <Chip
-                key={tech}
-                label={tech}
-                color="warning"
-                variant="outlined"
-              />
+              <Chip key={tech} label={tech} color="warning" variant="outlined" />
             ))}
           </Stack>
 
@@ -451,7 +419,7 @@ export default function ProjectDrawer({
                       src={image}
                       alt={project.title}
                       sx={{
-                        width: "100%",
+                        width: '100%',
                         borderRadius: 3,
                       }}
                     />

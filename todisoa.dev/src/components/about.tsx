@@ -1,16 +1,12 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="glass max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24"
-    >
+    <section id="about" className="glass max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
       <div className=" grid md:grid-cols-2 gap-12 items-center">
-
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -35,7 +31,8 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
         >
-          <p className="
+          <p
+            className="
               inline-block
               rounded-full
               border
@@ -50,7 +47,8 @@ export default function About() {
               tracking-widest
               uppercase
               text-yellow-400
-            ">
+            "
+          >
             À PROPOS
           </p>
 
@@ -59,35 +57,25 @@ export default function About() {
           </h2>
 
           <p className="text-gray-400 leading-8">
-            Passionné par le développement web depuis plus de
-            6 ans, j&rsquo;accompagne les entreprises dans la création
-            d&rsquo;applications modernes, performantes et évolutives.
-
-            Mon expertise couvre React, Next.js, Node.js,
-            NestJS, MongoDB et PostgreSQL.
+            Passionné par le développement web depuis plus de 6 ans, j&rsquo;accompagne les
+            entreprises dans la création d&rsquo;applications modernes, performantes et évolutives.
+            Mon expertise couvre React, Next.js, Node.js, NestJS, MongoDB et PostgreSQL.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-
             <div>
-              <h3 className="text-yellow-400 text-3xl font-bold">
-                6+
-              </h3>
+              <h3 className="text-yellow-400 text-3xl font-bold">6+</h3>
 
               <p>Années d&rsquo;expérience</p>
             </div>
 
             <div>
-              <h3 className="text-yellow-400 text-3xl font-bold">
-                15+
-              </h3>
+              <h3 className="text-yellow-400 text-3xl font-bold">15+</h3>
 
               <p>Projets réalisés</p>
             </div>
-
           </div>
         </motion.div>
-
       </div>
     </section>
   );

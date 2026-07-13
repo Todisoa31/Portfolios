@@ -17,7 +17,7 @@ export interface CaseStudy {
 
   technologies: string[];
 
-  difficulty?: "Intermédiaire" | "Avancé" | "Expert";
+  difficulty?: 'Intermédiaire' | 'Avancé' | 'Expert';
 
   domain?: string;
 }

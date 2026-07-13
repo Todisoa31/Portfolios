@@ -1,49 +1,32 @@
-import "./globals.css";
+import './globals.css';
 
-import type { Metadata } from "next";
-import Providers from "./providers";
+import type { Metadata } from 'next';
+import Providers from './providers';
 
-export const metadata : Metadata = {
-  metadataBase: new URL(
-    "https://todisoa.dev"
-  ),
+export const metadata: Metadata = {
+  metadataBase: new URL('https://todisoa.dev'),
 
-  title:
-    "Todisoa Herinjanahary | Fullstack JavaScript Developer",
+  title: 'Todisoa Herinjanahary | Fullstack JavaScript Developer',
 
-  description:
-    "Développeur Fullstack JS spécialisé React, Next.js, NestJS et Node.js.",
+  description: 'Développeur Fullstack JS spécialisé React, Next.js, NestJS et Node.js.',
 
-  keywords: [
-    "React",
-    "NextJS",
-    "NestJS",
-    "NodeJS",
-    "Fullstack",
-    "JavaScript",
-  ],
+  keywords: ['React', 'NextJS', 'NestJS', 'NodeJS', 'Fullstack', 'JavaScript'],
 
   openGraph: {
-    title:
-      "Todisoa Herinjanahary",
+    title: 'Todisoa Herinjanahary',
 
-    description:
-      "Portfolio Fullstack Developer",
+    description: 'Portfolio Fullstack Developer',
 
-    images: ["/og-image.png"],
+    images: ['/og-image.png'],
   },
 
   twitter: {
-    card: "summary_large_image",
-    images: ["/og-image.png"],
+    card: 'summary_large_image',
+    images: ['/og-image.png'],
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <body>
