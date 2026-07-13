@@ -39,8 +39,8 @@ export const experiences = [
 
     technologies: [
       "Angular",
+      "AngularJS",
       "Node.js",
-      "MongoDB",
       "TypeScript",
       "GitLab",
       "Agile",

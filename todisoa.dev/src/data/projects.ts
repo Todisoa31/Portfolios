@@ -65,7 +65,7 @@ export const projects: Project[] = [
 
     title: "Plateforme de gestion Assurance & Réassurance",
 
-    company: "Mada ITLab",
+    company: "Indépendant",
 
     sector: "Assurance • Réassurance",
 
@@ -365,47 +365,48 @@ export const projects: Project[] = [
       "Angular",
       "AngularJS",
       "Node.js",
-      "JavaScript",
       "TypeScript",
-      "MongoDB",
+      "JavaScript",
+      "PostgreSQL",
+      "CMIS",
+      "Java",
       "GitLab",
     ],
 
     shortDescription:
-      "Plateforme d'archivage numérique permettant la gestion centralisée des documents d'entreprise.",
+      "Plateforme de Gestion Électronique de Documents permettant l'archivage, le traitement, la consultation et le suivi de millions de documents.",
 
     overview:
-      "Participation au développement et à la maintenance d'une plateforme de Gestion Électronique de Documents (GED) permettant l'archivage, la consultation, la recherche et le traitement des documents provenant de différentes sources (papier, e-mail, numérisation).",
+      "Participation au développement et à la maintenance d'une plateforme GED utilisée pour centraliser, indexer, rechercher et consulter des documents provenant de différents processus métier. L'application était composée de deux interfaces principales : une interface dédiée au traitement documentaire et une seconde interface destinée à la visualisation, à la consultation et au suivi des dossiers.",
 
     challenge:
-      "Garantir la stabilité d'une plateforme manipulant plusieurs millions de documents tout en améliorant les performances des traitements et la maintenabilité du code.",
+      "Faire évoluer une application documentaire manipulant plusieurs millions de documents tout en garantissant sa stabilité, ses performances et la compatibilité avec les processus métier existants.",
 
     solution:
-      "Développement de nouvelles fonctionnalités, maintenance corrective et évolutive, optimisation des traitements backend, amélioration des composants Angular et migration progressive des versions de MongoDB.",
+      "Développement de nouvelles fonctionnalités sur AngularJS et Angular, création d'une nouvelle interface de visualisation documentaire, amélioration des traitements Node.js, maintenance corrective et évolutive, optimisation des traitements backend et participation aux évolutions de l'architecture documentaire reposant sur PostgreSQL et CMIS.",
 
     result:
-      "Une plateforme documentaire plus performante, plus stable et plus simple à maintenir, utilisée quotidiennement par les équipes métier.",
+      "Une plateforme documentaire plus performante, plus ergonomique et plus simple à maintenir, facilitant aussi bien le traitement que la consultation des documents pour les équipes métier.",
 
     responsibilities: [
-      "Développement Fullstack",
-      "Développement Angular / AngularJS",
-      "Développement Node.js",
-      "Maintenance corrective et évolutive",
+      "Développement AngularJS et Angular",
+      "Développement Backend Node.js",
+      "Création d'une interface de visualisation documentaire",
+      "Développement d'une interface de traitement documentaire",
       "Création de nouvelles fonctionnalités",
+      "Maintenance corrective",
+      "Maintenance évolutive",
       "Optimisation des traitements backend",
-      "Maintenance MongoDB",
-      "Migration MongoDB v4 → v7",
-      "Création de scripts Node.js",
-      "Correction de bugs",
+      "Correction d'incidents de production",
       "Participation aux revues de code",
-      "Méthodologie Agile Scrum",
+      "Travail en méthodologie Agile Scrum",
     ],
 
     team:
-      "Développeurs, Chef de projet, Responsable technique, Équipe Qualité",
+      "3 développeurs, Project Manager, équipe Qualité et équipes métier",
 
     impact:
-      "Amélioration des performances backend et simplification de la maintenance de la plateforme.",
+      "Amélioration des performances, de la stabilité et de l'expérience utilisateur d'une plateforme documentaire utilisée quotidiennement.",
 
     screenshots: [],
 
@@ -415,7 +416,7 @@ export const projects: Project[] = [
   {
     id: "accounting",
 
-    title: "Plateforme de Gestion Comptable",
+    title: "Numen Expert - Plateforme de Gestion Comptable",
 
     company: "NUMEN Madagascar",
 
@@ -431,49 +432,336 @@ export const projects: Project[] = [
       "Angular",
       "AngularJS",
       "Node.js",
-      "JavaScript",
       "TypeScript",
-      "MongoDB",
+      "JavaScript",
+      "PostgreSQL",
+      "CMIS",
+      "Java",
       "GitLab",
     ],
 
     shortDescription:
-      "Application métier destinée au suivi comptable des clients et à la collaboration des équipes comptables.",
+      "Plateforme de gestion comptable permettant le traitement des dossiers clients, le suivi des opérations comptables et la collaboration entre les équipes métier.",
 
     overview:
-      "Participation au développement d'une plateforme de gestion comptable permettant le suivi des dossiers clients, le traitement des opérations comptables et la collaboration entre les équipes métier.",
+      "Participation au développement et à la maintenance de Numen Expert, une application web de gestion comptable composée de deux interfaces complémentaires : une interface dédiée au traitement des données comptables et une seconde permettant le suivi des dossiers ainsi que la consultation des informations métier. Les données étaient stockées dans PostgreSQL et manipulées au travers d'une couche CMIS, avec certains traitements réalisés via des services Java.",
 
     challenge:
-      "Faire évoluer une application critique tout en garantissant la fiabilité des données et la compatibilité avec les processus métier existants.",
+      "Prendre en main une application métier développée depuis plusieurs années, reposant sur une architecture complexe, tout en assurant les évolutions fonctionnelles, la maintenance corrective et la résolution d'incidents critiques.",
 
     solution:
-      "Développement de nouvelles fonctionnalités, optimisation des traitements Node.js, maintenance de la base MongoDB et création de scripts automatisés de migration de données.",
+      "Développement de nouvelles fonctionnalités AngularJS, amélioration des interfaces existantes, maintenance backend Node.js, création de scripts de migration de données, analyse d'incidents de production et optimisation des traitements applicatifs.",
 
     result:
-      "Une plateforme comptable plus performante, facilitant le traitement des dossiers clients et les échanges entre les collaborateurs.",
+      "Évolution continue de la plateforme, amélioration de sa stabilité, résolution rapide d'incidents critiques et accompagnement des équipes métier dans leurs activités quotidiennes.",
 
     responsibilities: [
-      "Développement Fullstack",
-      "Développement Angular",
+      "Développement AngularJS",
       "Développement Backend Node.js",
+      "Développement de nouvelles fonctionnalités",
+      "Maintenance corrective",
+      "Maintenance évolutive",
       "Création de scripts Node.js",
-      "Maintenance MongoDB",
-      "Migration MongoDB v4 → v7",
-      "Optimisation des requêtes",
+      "Migration de données",
+      "Optimisation des traitements",
+      "Analyse d'incidents de production",
       "Correction de bugs",
-      "Développement de fonctionnalités métier",
       "Participation aux revues de code",
+      "Travail en méthodologie Agile Scrum",
     ],
 
     team:
-      "Développeurs, Responsable technique, Chef de projet, Équipe comptable",
+      "3 développeurs, Project Manager et équipes comptables",
 
     impact:
-      "Optimisation des traitements comptables et amélioration des performances de la plateforme.",
+      "Contribution à la fiabilité d'une application métier utilisée quotidiennement par les équipes comptables.",
 
     screenshots: [],
 
     featured: true,
+  },
+
+  {
+    id: "data-migration",
+
+    title: "Migration de données France → Madagascar",
+
+    company: "NUMEN Madagascar",
+
+    sector: "Migration de données",
+
+    period: "2023",
+
+    status: "NDA",
+
+    thumbnail: "/images/software.jpg",
+
+    technologies: [
+      "Node.js",
+      "PostgreSQL",
+      "CMIS",
+      "JavaScript",
+      "GitLab",
+    ],
+
+    shortDescription:
+      "Développement d'un moteur de migration permettant de synchroniser les données entre les environnements France et Madagascar.",
+
+    overview:
+      "Participation à un projet de migration consistant à synchroniser des données entre une base de données située en France et un environnement hébergé à Madagascar. L'objectif était d'assurer une migration fiable tout en préservant l'intégrité des données existantes.",
+
+    challenge:
+      "Les principales difficultés provenaient de la qualité des données. Plusieurs enregistrements représentaient une même information métier mais avec des différences de format, de casse, d'espaces ou d'écriture pouvant entraîner des doublons.",
+
+    solution:
+      "Développement d'un script Node.js permettant d'extraire les données, de normaliser les valeurs, de détecter les doublons potentiels, de vérifier l'existence des enregistrements avant insertion et de valider la cohérence des données après migration.",
+
+    result:
+      "Migration réalisée avec succès sans perte d'information, avec validation des résultats par les équipes métier après contrôle des volumes et des données migrées.",
+
+    responsibilities: [
+      "Développement de scripts Node.js",
+      "Extraction des données",
+      "Transformation des données",
+      "Normalisation des valeurs",
+      "Détection des doublons",
+      "Validation des données",
+      "Migration PostgreSQL",
+      "Contrôles de cohérence",
+      "Collaboration avec les équipes métier",
+    ],
+
+    team:
+      "Développeurs France, développeurs Madagascar et équipes métier",
+
+    impact:
+      "Migration sécurisée garantissant la qualité et la cohérence des données entre les deux environnements.",
+
+    screenshots: [],
+
+    featured: true,
+  },
+
+  {
+    id: "fec-extractor",
+
+    title: "Intégration et évolution du FEC Extractor",
+
+    company: "NUMEN Madagascar",
+
+    sector: "Comptabilité • Import de données",
+
+    period: "2023",
+
+    status: "NDA",
+
+    thumbnail: "/images/software.jpg",
+
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "JavaScript",
+      "PostgreSQL",
+      "CMIS",
+      "GitLab",
+    ],
+
+    shortDescription:
+      "Finalisation et intégration d'un moteur d'import des Fichiers des Écritures Comptables (FEC) dans Numen Expert.",
+
+    overview:
+      "Le projet consistait à reprendre le développement d'un composant initié par un autre développeur afin de le finaliser et de l'intégrer dans la plateforme Numen Expert. Ce moteur permettait d'importer les Fichiers des Écritures Comptables (FEC), d'extraire les informations utiles et d'alimenter automatiquement les données comptables de l'application.",
+
+    challenge:
+      "Comprendre rapidement l'architecture d'un composant déjà existant, compléter les fonctionnalités manquantes, garantir la compatibilité avec Numen Expert et assurer la fiabilité des données importées.",
+
+    solution:
+      "Analyse du fonctionnement existant, poursuite du développement, amélioration des traitements d'import, intégration dans la plateforme Numen Expert et réalisation des tests fonctionnels avec les équipes métier.",
+
+    result:
+      "Le moteur a pu être intégré avec succès dans Numen Expert, facilitant l'import automatisé des données comptables et réduisant les traitements manuels des utilisateurs.",
+
+    responsibilities: [
+      "Analyse du code existant",
+      "Finalisation du développement",
+      "Intégration dans Numen Expert",
+      "Import des FEC",
+      "Extraction des données comptables",
+      "Import du Plan Comptable Général",
+      "Import des comptes auxiliaires",
+      "Validation des données",
+      "Correction des anomalies",
+      "Tests fonctionnels",
+    ],
+
+    team:
+      "3 développeurs et Project Manager",
+
+    impact:
+      "Automatisation du processus d'import des données comptables et amélioration de la productivité des équipes métier.",
+
+    screenshots: [],
+  },
+
+  {
+    id: "frt-import",
+
+    title: "Dépôt massif des Fiches de Renseignement Technique (FRT)",
+
+    company: "NUMEN Madagascar",
+
+    sector: "Automatisation documentaire",
+
+    period: "2024",
+
+    status: "NDA",
+
+    thumbnail: "/images/software.jpg",
+
+    technologies: [
+      "Node.js",
+      "AngularJS",
+      "TypeScript",
+      "PostgreSQL",
+      "CMIS",
+    ],
+
+    shortDescription:
+      "Développement d'un module permettant l'import massif et l'enrichissement automatique des Fiches de Renseignement Technique.",
+
+    overview:
+      "Conception d'une fonctionnalité permettant de déposer plusieurs centaines de FRT simultanément. Chaque fichier était analysé, validé et utilisé pour enrichir automatiquement les métadonnées métier des dossiers.",
+
+    challenge:
+      "Garantir la qualité des données importées tout en assurant des traitements rapides sur de gros volumes.",
+
+    solution:
+      "Développement d'un moteur de validation, de parsing et d'enrichissement automatique des propriétés métier avec gestion détaillée des erreurs.",
+
+    result:
+      "Réduction importante des traitements manuels et amélioration de la qualité des données.",
+
+    responsibilities: [
+      "Développement Node.js",
+      "Parsing",
+      "Validation",
+      "Import massif",
+      "Gestion des erreurs",
+      "Optimisation des traitements",
+    ],
+
+    team: "Équipe Fullstack",
+
+    impact:
+      "Automatisation complète du dépôt des FRT.",
+
+    screenshots: [],
+  },
+
+  {
+    id: "balance-carree",
+
+    title: "Balance Carrée",
+
+    company: "NUMEN Madagascar",
+
+    sector: "Comptabilité",
+
+    period: "2024",
+
+    status: "NDA",
+
+    thumbnail: "/images/software.jpg",
+
+    technologies: [
+      "AngularJS",
+      "Node.js",
+      "PostgreSQL",
+      "CMIS",
+    ],
+
+    shortDescription:
+      "Développement d'un module de calcul de balance comptable.",
+
+    overview:
+      "Développement d'un écran permettant de générer automatiquement une balance carrée avec filtres, calculs et export.",
+
+    challenge:
+      "Traiter rapidement de grands volumes d'écritures comptables.",
+
+    solution:
+      "Optimisation des requêtes et développement d'un moteur de calcul côté backend.",
+
+    result:
+      "Calcul rapide et fiable des balances comptables.",
+
+    responsibilities: [
+      "Développement AngularJS",
+      "Développement Node.js",
+      "Calcul comptable",
+      "Export CSV",
+      "Optimisation",
+    ],
+
+    team: "Équipe Comptabilité",
+
+    impact:
+      "Réduction du temps nécessaire à la génération des balances.",
+
+    screenshots: [],
+  },
+
+  {
+    id: "workbatch",
+
+    title: "Optimisation du moteur WorkBatch",
+
+    company: "NUMEN Madagascar",
+
+    sector: "Traitement documentaire",
+
+    period: "2023",
+
+    status: "NDA",
+
+    thumbnail: "/images/software.jpg",
+
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "CMIS",
+      "PostgreSQL",
+    ],
+
+    shortDescription:
+      "Optimisation du moteur de création et de traitement des WorkBatch.",
+
+    overview:
+      "Participation au développement des traitements permettant de créer automatiquement des lots documentaires destinés aux opérateurs.",
+
+    challenge:
+      "Réduire le temps de création des lots et éviter les doublons.",
+
+    solution:
+      "Optimisation des algorithmes de regroupement, de tri et de sélection des documents.",
+
+    result:
+      "Traitements plus rapides et meilleure répartition des documents.",
+
+    responsibilities: [
+      "Node.js",
+      "Optimisation",
+      "Algorithmes",
+      "Traitements batch",
+      "Correction de bugs",
+    ],
+
+    team: "Équipe GED",
+
+    impact:
+      "Amélioration des performances des traitements documentaires.",
+
+    screenshots: [],
   },
 
   {

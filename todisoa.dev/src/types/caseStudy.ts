@@ -11,7 +11,13 @@ export interface CaseStudy {
 
   result: string;
 
+  highlight?: string;
+
   learnings: string[];
 
   technologies: string[];
+
+  difficulty?: "Intermédiaire" | "Avancé" | "Expert";
+
+  domain?: string;
 }

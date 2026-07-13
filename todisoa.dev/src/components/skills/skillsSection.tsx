@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { skills } from "@/src/data/skills";
+import { categories, skills } from "@/src/data/skills";
 
 import SkillCard from "./skillCard";
 
@@ -116,47 +116,82 @@ export default function SkillsSection() {
 
         {/* Skills */}
 
-        <div
-          className="
-            mt-12
-            sm:mt-20
-            grid
-            grid-cols-2
-            sm:grid-cols-2
-            lg:grid-cols-4
-            gap-2
-            md:gap-8
-            sm:gap-8
-          "
-        >
+        <div className="mt-16 space-y-16">
 
-          {skills.map((skill, index) => (
+          {categories.map((category) => {
 
-            <motion.div
-              key={skill.name}
-              initial={{
-                opacity: 0,
-                y: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                delay: index * 0.08,
-                duration: .5,
-              }}
-              viewport={{
-                once: true,
-              }}
-            >
-              <SkillCard
-                skill={skill}
-                index={index}
-              />
-            </motion.div>
+            const Icon = category.icon;
 
-          ))}
+            const categorySkills = skills.filter(
+              (skill) => skill.category === category.key
+            );
+
+            return (
+              <div key={category.key}>
+
+                <div className="mb-8 flex items-center gap-4">
+                  <div
+                    className="flex h-12 w-12 items-center justify-center rounded-xl"
+                    style={{
+                      backgroundColor: `${category.color}20`,
+                    }}
+                  >
+                    <Icon
+                      size={28}
+                      color={category.color}
+                    />
+                  </div>
+
+                  <div>
+                    <h3
+                      className="text-2xl font-bold"
+                      style={{
+                        color: category.color,
+                      }}
+                    >
+                      {category.title}
+                    </h3>
+
+                    <div
+                      className="mt-2 h-1 w-20 rounded-full"
+                      style={{
+                        backgroundColor: category.color,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div
+                  className="
+                    grid
+                    grid-cols-2
+                    lg:grid-cols-4
+                    gap-4
+                    md:gap-8
+                  "
+                >
+                  {categorySkills.map((skill, index) => (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: index * 0.08,
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      <SkillCard
+                        skill={skill}
+                        index={index}
+                      />
+                    </motion.div>
+                  ))}
+                </div>
+
+              </div>
+            );
+          })}
 
         </div>
 
