@@ -24,16 +24,16 @@ export default function PageAccueil() {
         <About />
         <Divider />
 
-        <SkillsSection />
-        <Divider />
-
         <Experience />
         <Divider />
 
-        <CaseStudies />
+        <SkillsSection />
         <Divider />
 
         <Projects />
+        <Divider />
+
+        <CaseStudies />
         <Divider />
 
         <Contact />

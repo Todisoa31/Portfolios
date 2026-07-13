@@ -11,10 +11,10 @@ export default function Navbar() {
 
   const links = [
     { id: 'about', label: 'À propos' },
-    { id: 'skills', label: 'Compétences' },
     { id: 'experience', label: 'Expérience' },
-    { id: 'case-studies', label: 'Études de cas' },
+    { id: 'skills', label: 'Compétences' },
     { id: 'projects', label: 'Projets' },
+    { id: 'case-studies', label: 'Études de cas' },
     { id: 'contact', label: 'Contact' },
   ];
 
